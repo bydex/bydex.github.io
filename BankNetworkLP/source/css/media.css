@@ -1,0 +1,56 @@
+@media screen and (max-width: 1480px) {
+	.best-banks {
+		background-position-x: 40px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.header .navbar .navbar-nav .nav-item .nav-link {
+		margin-right: 2px;
+	}
+	.header .navbar .navbar-nav .nav-item:nth-child(2)::after {
+		right: -5px;
+		top: -8px;
+	}
+	.header .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	.best-banks {
+		background-position-x: 30px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.header .navbar .navbar-toggler {
+		outline: none;
+		color: black;
+		font-size: 30px;
+	}
+	.header .navbar .navbar-nav .nav-item:nth-child(2)::after {
+		left: 120px;
+	}
+	.header .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle {
+		margin-left: 0px;
+		padding-left: 15px;
+	}
+	#dropdown-toggle::before {
+		left: 0px;
+	}
+
+	.footer .navbar .navbar-toggler {
+    color: white;
+	}
+	.best-banks {
+		background-position-x: 15px;
+	}
+}
+@media screen and (max-width: 485px) {
+	.news .news__blok .news__blok-up .news__img {
+		width: 270px;
+	}
+	.footer .footer__links {
+		display: none;
+	}
+	.best-banks .best-banks__title {
+		max-width: 150px !important;
+	}
+}

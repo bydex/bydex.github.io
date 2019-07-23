@@ -1,0 +1,358 @@
+/*****************LAPTOP AND TABLETS*****************/
+@media screen and (max-width: 1200px)
+{
+    header
+    {
+        min-height: 740px;
+
+        background-position: top;
+    }
+    header .title-slider-buttons .button-left,
+    .button-right
+    {
+        display: none;
+    }
+    header .title-slider-buttons
+    {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    nav
+    {
+        width: 90%;
+
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    nav h1
+    {
+        margin-right: 106px;
+    }
+    nav .nav-title
+    {
+        margin-right: 0;
+    }
+    nav .nav-sandwhich  .nav-list
+    {
+        position: absolute;
+
+        display: none;
+
+        width: 120px;
+
+        background-color: rgba(0,0,0,.8);
+    }
+    nav .nav-logo-container
+    {
+        margin: 0 auto;
+    }
+    nav .nav-sandwhich  .nav-list li
+    {
+        padding: 10px 5px;
+
+        cursor: pointer;
+        -webkit-transition: .4s;
+             -o-transition: .4s;
+                transition: .4s;
+    }
+    nav .nav-sandwhich  .nav-list li a
+    {
+        -webkit-transition: .4s;
+             -o-transition: .4s;
+                transition: .4s;
+    }
+    nav .nav-sandwhich .nav-list li:hover
+    {
+        background-color: #362f2d;
+    }
+    nav .nav-sandwhich .nav-list li:hover a
+    {
+        margin-left: 15px;
+    }
+    nav .nav-sandwhich
+    {
+        position: relative;
+
+        margin-right: 46px;
+
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    nav .nav-sandwhich img
+    {
+        display: block;
+
+        cursor: pointer;
+    }
+    nav .nav-sandwhich:hover .nav-list
+    {
+        -webkit-transition: 1s;
+             -o-transition: 1s;
+                transition: 1s;
+    }
+    nav .links-search
+    {
+        margin-left: 0;
+    }
+    nav .dots-nav
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+
+    .possibilites .possibilites-block
+    {
+        width: 870px;
+        margin-bottom: 0 ;
+    }
+    .possibilites .possibilites-block ul
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .possibilites .possibilites-block ul li
+    {
+        padding: 30px 10px 30px 10px;
+    }
+    .possibilites .possibilites-portfolio
+    {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    .possibilites .possibilites-portfolio img
+    {
+        width: 100%;
+    }
+
+
+    .projects .projects-multipurpose .projects-multipurpose-content
+    {
+        width: 95%;
+    }
+    .projects .projects-photos
+    {
+        width: 95%;
+    }
+    .projects ul
+    {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .projects .projects-load-more
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .adaptation-for-mobile .adaptation-container
+    {
+            flex-direction: column-reverse;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+    }
+    .adaptation-for-mobile .adaptation-container .adaptation-text h1
+    {
+        margin-left: 0;
+    }
+    .adaptation-for-mobile .adaptation-container .adaptation-text p,
+    ul
+    {
+        display: none;
+    }
+    .achievements .achievements-statistic .achievements-statistic-container
+    {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+
+
+    .posts-images-container
+    {
+        width: 95%;
+
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .achievements-posts
+    {
+        height: 100%;
+    }
+    .posts-images-container
+    {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .resent-posts
+    {
+        margin: 80px 0;
+    }
+    .resent-posts p
+    {
+        width: 95%;
+    }
+    .achievements-statistic-container
+    {
+        width: 95%;
+        height: 100%;
+
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .achievements-statistic-container li
+    {
+        margin: 10px;
+    }
+
+
+
+    .logotypes-block
+    {
+        width: 95%;
+
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .logotypes-block img
+    {
+        margin: 15px;
+    }
+
+
+
+
+    .container-footer-waxom
+    {
+        width: 800px;
+
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    footer .footer-waxom
+    {
+        height: 100%;
+    }
+    footer .logos-wrapper,
+    .logos-posts,
+    .our-twitter
+    {
+        margin: 37px;
+    }
+    .dribble-widget
+    {
+        margin: 30px 23px;
+    }
+
+
+
+    .footer-footer-wrapper
+    {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .footer-rights,
+    .footer-developers
+    {
+        margin: 10px;
+    }
+}
+
+
+
+
+
+/*****************TABLETS AND MOBILES*****************/
+@media screen and (max-width: 776px)
+{
+    header
+    {
+        min-height: 600px;
+    }
+    header .nav-logo-container h1
+    {
+        display: none;
+    }
+    .title-slider p:first-child
+    {
+        display: none;
+    }
+    .title-slider
+    {
+        height: 100%;
+    }
+    header .title-slider-buttons .title-slider p,
+    .main-title
+    {
+        height: 100% !important;
+    }
+    header .title-slider-buttons .title-slider h1
+    {
+        font-size: 45px;
+    }
+    .title-slider-buttons .title-slider p
+    {
+        width: 331px;
+    }
+    .dots-nav
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .possibilites .possibilites-block
+    {
+        width: 95%;
+    }
+    .possibilites-portfolio p
+    {
+        width: 100%;
+    }
+    .possibilites-portfolio h1
+    {
+        font-size: 24px;
+    }
+
+
+
+
+
+
+    .projects-latest
+    {
+        width: 95%;
+    }
+    .projects-latest ul
+    {
+        width: 90%;
+    }
+    .projects-latest ul li
+    {
+        margin: 5px;
+    }
+
+
+
+    .logotypes
+    {
+        height: 117%;
+
+        background-size: cover;
+    }
+}

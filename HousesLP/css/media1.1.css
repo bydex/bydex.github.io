@@ -1,0 +1,9 @@
+@media screen and (max-width: 991px) {
+  .header li {
+    padding: 7px 0px; }
+  .acsonometry img {
+    width: 100%; } }
+
+@media screen and (max-width: 1487px) {
+  .acsonometry img {
+    width: 130%; } }

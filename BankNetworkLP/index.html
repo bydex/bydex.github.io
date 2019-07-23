@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="source/css/style.css">
+	<link rel="stylesheet" href="source/css/media.css">
+	<link rel="stylesheet" href="source/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="source/css/owl.theme.default.min.css">
+	<style>
+		.owl-prev {
+			left: 71%;
+		    background: url(source/images/prev.png) no-repeat center !important;
+		    background-size: cover;
+		}
+		.owl-prev:focus, .owl-next:focus {
+   			outline: none;
+    		border: none;
+		}
+
+		.owl-next {
+			left: 75%;
+			background: url(source/images/next.png) no-repeat center !important;
+		    background-size: cover;
+		}
+		.owl-prev, .owl-next {
+			position: absolute;
+			top: -26%;
+			width: 40px;
+		    height: 40px;
+		}
+		.owl-prev span, .owl-next span {
+			display: none;
+		}
+		.owl-theme .owl-nav [class*='owl-']:hover {
+			background: transparent;
+		}
+		@media screen and (max-width: 991px) {
+			.owl-prev {
+				left: 67%;
+			}
+		}
+		@media screen and (max-width: 770px) {
+			.best-banks .best-banks__title {
+				max-width: 300px;
+			}
+			.owl-prev {
+				left: 60%;
+			}
+			.owl-next {
+				left: 70%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-expand-lg">
+						<a href="#" class="navbar-brand"><img src="source/images/header__nav-logo.png" alt=""></a>
+						
+						<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent">
+						<i class="fas fa-bars"></i>
+						</button>
+
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item"><a href="" class="nav-link">Главная</a></li>
+								<li class="nav-item"><a href="" class="nav-link">Банки и партнеры</a></li>
+								<li class="nav-item"><a href="" class="nav-link">Новости</a></li>
+								<li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+								<li class="nav-item dropdown">
+									<a href="" id="dropdown-toggle" class="nav-link dropdown-toggle" data-toggle="dropdown">Санкт-Петербург<i class="fa fa-angle-down"></i></a>
+									<div class="dropdown-menu">
+										<a href="" class="dropdown-item">Product 1</a>
+										<a href="" class="dropdown-item">Product 2</a>
+										<a href="" class="dropdown-item">Product 3</a>
+										<a href="" class="dropdown-item">Product 4</a>
+										<div class="dropdown-divider"></div>
+										<a href="" class="dropdown-item">Product 5</a>
+										<a href="" class="dropdown-item">Product 3</a>
+										<a href="" class="dropdown-item">Product 4</a>
+										<div class="dropdown-divider"></div>
+										<a href="" class="dropdown-item">Product 3</a>
+										<a href="" class="dropdown-item">Product 4</a>
+										<a href="" class="dropdown-item">Product 3</a>
+										<a href="" class="dropdown-item">Product 4</a>
+									</div>
+								</li>
+							</ul>
+							<button class="btn btn-danger btn-registration">Вход / Регистрация</button>
+						</div>
+					</nav>
+				</div>
+				
+
+			<div class="row text-lg-left text-center">
+				<div class="col-lg-7">
+					<div class="header__info">
+						<h1 class="header__title">
+							Теперь <i>вы выбираете</i> банки,
+							а не они вас!
+						</h1>
+						<p class="header__text">
+							Вам нужно открыть расчетный счет для юридического лица, но вы не знаете, в какой банк обратиться? 
+						</p>
+						<button class="btn btn-danger header__open-invoice">Открыть счет бесплатно <img src="source/images/header__open-invoice.png" alt=""></button>
+					</div>
+				</div>
+
+				<div class="col-lg-5 d-flex justify-content-center">
+					<img src="source/images/header__model.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="advantages">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-lg-4 col-md-12 mb-lg-0 mb-3">		
+					<div class="advantages__item d-flex align-items-start justify-content-center">
+						<img src="source/images/advantages__item1.png" alt="">
+						<div class="advantages__info">
+							<h3 class="advantages__title">Быстрое оформление</h3>
+							<p class="advantages__text">Бесплатно не значит долго.<br>Вся процедуря займет не<br>более 10 минут</p>
+						</div>
+					</div>
+				</div>	
+				<div class="col-lg-4 col-md-12 mb-lg-0 mb-3">
+					<div class="advantages__item d-flex align-items-start justify-content-center">
+						<img src="source/images/advantages__item2.png" alt="">
+						<div class="advantages__info">
+							<h3 class="advantages__title">Выбор банков</h3>
+							<p class="advantages__text">Теперь вы выбираете банки, а не они вас. Огромный выбор банков в вашем городе. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="advantages__item d-flex align-items-start justify-content-center">	
+						<img src="source/images/advantages__item3.png" alt="">
+						<div class="advantages__info">
+							<h3 class="advantages__title">Автоматизация</h3>
+							<p class="advantages__text">Банки получают ваши заявки автоматически и обрабатывают запрос в самый короткий срок</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="open-invoice">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 d-flex justify-content-lg-center justify-content-center">
+					<img src="source/images/open-invoice__0-rubles.png" alt="" style="position: relative; margin-left: 15px;">
+				</div>
+				<div class="col-lg-8 d-flex flex-column align-items-lg-start align-items-center text-lg-left text-center">
+					<h1 class="open-invoice__rubles">Рублей</h1>
+					<h2 class="open-invoice__title">за открытие расчетного счета</h2>
+					<p class="open-invoice__text">Вам нужно открыть расчетный счет для юридического лица, но не знаете, в какой банк обратиться? 
+					Или у вас просто нет времени на то, чтобы выяснять условия разных банков и подавать в них заявки, чтобы открыть юридический счет?</p>
+					<p class="open-invoice__text open-invoice__text2">С нашим сервисом  вы можете легко открыть счет для ООО, не тратя ни минуты лишнего времени! Это первый агрегатор для тех, кто хочет открыть счет в банке для юридического лица – и он уже эффективно работает!</p>
+					<button class="btn btn-danger open-invoice__btn d-flex align-items-center">Открыть счет <img src="source/images/header__open-invoice.png" class="ml-2" alt=""></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="choice d-flex align-items-end">
+		<div class="container choice__wrapper">
+			<div class="row d-flex flex-column text-center">
+				<h3 class="choice__sup-title">Выбор за вами</h3>
+				<h1 class="choice__title">Теперь вы выбираете банки, а не они вас</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="choice__item choice__item-1">
+						<p class="choice__text">Заполните удобную 
+						электронную форму и загрузите необходимые документы</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="choice__item choice__item-2">
+						<p class="choice__text">Заполните удобную 
+						электронную форму и загрузите необходимые документы</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="choice__item choice__item-3">
+						<p class="choice__text">Заполните удобную 
+						электронную форму и загрузите необходимые документы</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="choice__item choice__item-4">
+						<p class="choice__text">Заполните удобную 
+						электронную форму и загрузите необходимые документы</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="choice__item choice__item-5">
+						<p class="choice__text">Заполните удобную 
+						электронную форму и загрузите необходимые документы</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="choice__item choice__item-6">
+						<p class="choice__text">Заполните удобную 
+						электронную форму и загрузите необходимые документы</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fast-free">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="fast-free__info">
+						<h1 class="fast-free__title">Быстро и бесплатно!</h1>
+						<p class="fast-free__text">Срочное открытие счета для юридических лиц – быстро и бесплатно! Наш агрегатор поможет вам одновременно отправить заявки в разные банки и получить ответы, не выходя из рабочего кабинета или дома. Вам больше не нужно лично посещать каждый банк и подавать документы на открытие расчетного счета. И главное – за это не придется платить!</p>
+
+						<p class="fast-free__text fast-free__text2">Это лучшая возможность быстро открыть счет для ООО, в чем бы ни заключалась его деятельность!  Вы не тратите свое время на обращения в банки – все происходит без вашего личного участия, пока вы занимаетесь своим бизнесом. Все, что вам нужно – это заполнить электронную форму агрегатора и загрузить в нее документы – а банки сами будут обращаться к вам с предложениями открыть счет для юридического лица.</p>
+						<button class="fast-free__btn btn btn-danger  d-flex align-items-center">Заполнить заявку<img src="source/images/header__open-invoice.png" class="ml-2" alt=""></button>
+					</div>	
+				</div>
+				<div class="col-lg-6">
+					<img src="source/images/fast-free__img.png" class="fast-free__img" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="news__title">наши Новости</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-12 mb-lg-0 mb-3">
+					<div class="news__blok">
+						<div class="news__blok-up d-flex flex-column align-items-center justify-content-center">
+							<img class='news__img' src="source/images/news__bank-logo.png" alt="">
+							<p>рабочие будни</p>
+							<p class="align-self-start d-flex align-items-center"><img src="source/images/calendar.png" alt="">27.12.2019</p>
+						</div>
+						<div class="news__blok-down">
+							<h3 class="news__blok-down__title">Планы по подключениям банков на 2019 год</h3>
+							<p class="news__blok-down__text">Срочное открытие счета для юридических лиц – быстро и бесплатно! Наш агрегатор поможет вам одновременно отправить заявки в разные банки и получить ответы, не выходя из рабочего кабинета или дома.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 news-item-wrapper d-flex flex-wrap justify-content-start
+				align-items-start">
+						<div class="col-lg-6 col-md-6 pr-lg-2 pl-lg-2 pr-md-1 pl-md-1 pr-sm-0 pl-sm-0 pr-0 pl-0">
+							<div class="news-item">
+								<h3 class="news-item__title">Итоги работы 
+								агрегатора 
+								за 2018 год</h3>
+								<p class="news-item__text">Срочное открытие счета для юридических лиц – быстро и бесплатно! Наш агрегатор поможет вам одновременно</p>
+								<div class="news-item__date align-self-start d-flex align-items-center"><i class="fas fa-calendar-alt"></i>27.12.2019 </div>
+							</div>
+						</div>
+						<div class="col-lg-6  col-md-6 pr-lg-2 pl-lg-2 pr-md-1 pl-md-1 pr-sm-0 pl-sm-0 pr-0 pl-0">
+							<div class="news-item">
+								<h3 class="news-item__title">Топ-20 банков
+								россии по версии 
+								кредитного союза</h3>
+								<p class="news-item__text">Срочное открытие счета для юридических лиц – быстро и бесплатно! Наш агрегатор</p>
+								<div class="news-item__date align-self-start d-flex align-items-center"><i class="fas fa-calendar-alt"></i>27.12.2019 </div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 pr-lg-2 pl-lg-2 pr-md-1 pl-md-1 pr-sm-0 pl-sm-0 pr-0 pl-0">
+							<div class="news-item">
+								<h3 class="news-item__title">представляем вашему 
+								вниманию новый 
+								“Ташпиков банк”</h3>
+								<p class="news-item__text">Срочное открытие счета для юридических лиц – быстро и бесплатно! Наш агрегатор</p>
+								<div class="news-item__date align-self-start d-flex align-items-center"><i class="fas fa-calendar-alt"></i>27.12.2019 </div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 pr-lg-2 pl-lg-2 pr-md-1 pl-md-1 pr-sm-0 pl-sm-0 pr-0 pl-0">
+							<div class="news-all d-flex flex-column align-items-center justify-content-center">
+								<img src="source/images/news__all-news.png" alt="">
+								<h3>все новости</h3>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="best-banks">
+		<div class="container">
+			<div class="best-banks__wrapper">
+				<div class="row">
+					<div class="col-lg-12">
+						<h4 class="best-banks__suptitle">Только лучшие банки</h4>
+						<h3 class="best-banks__title">станут вашими партнерами</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="owl-carousel owl-theme">
+							<div class="best-banks__item-wrapper1">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+							<div class="best-banks__item-wrapper2">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+							<div class="best-banks__item-wrapper3">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+							<div class="best-banks__item-wrapper4">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+							<div class="best-banks__item-wrapper5">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+							<div class="best-banks__item-wrapper1">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+							<div class="best-banks__item-wrapper2">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+							<div class="best-banks__item-wrapper3">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+							<div class="best-banks__item-wrapper4">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+							<div class="best-banks__item-wrapper5">
+								<div class="best-banks__item-up best-banks__item"></div>
+								<div class="best-banks__item-down best-banks__item"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-wrapper">
+		<footer class="footer header">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-expand-lg d-flex">
+						<a href="#" class="navbar-brand"><img src="source/images/footer-logo.png" alt=""></a>
+							
+						<div class="footer__links">
+							<a href="https://web.telegram.org/#/im">
+								<img src="source/images/footer__telegram.png" alt="">
+							</a>
+							<a href="https://www.facebook.com/">
+								<img src="source/images/footer__facebook.png" alt="">
+							</a>
+							<a href="https://www.instagram.com/">
+								<img src="source/images/footer__instagram.png" alt="">
+							</a>
+						</div>
+						<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent">
+						<i class="fas fa-bars"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item"><a href="" class="nav-link">Главная</a></li>
+								<li class="nav-item"><a href="" class="nav-link">О проекте</a></li>
+								<li class="nav-item"><a href="" class="nav-link">Новости</a></li>
+								<li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+								<li class="nav-item"><a href="" class="nav-link">Подобрать банк</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="under-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 d-flex justify-content-lg-between flex-lg-row flex-column align-items-center">
+					<p class="under-footer__copyright">© Bank Networks. Все права защищены</p>
+					<p class="under-footer__copyright">Сделано с <i class="fa fa-heart"></i> за чашечкой   <i class="fas fa-coffee"></i>   компанией Hardweb</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="source/javascript/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="source/javascript/owl.carousel.min.js"></script>
+<script src="source/javascript/jquery.mousewheel.min.js"></script>
+<script>
+	$('.owl-carousel').owlCarousel({
+		autoplay: false,
+		autoplayHoverPause: true,
+		items: 5,
+		nav: true,
+		dots: false,
+		loop: true,
+		responsive: {
+			0: {
+				items: 1.4
+			},
+			485: {
+				items: 2
+			},
+			728: {
+				items: 3
+			},
+			960: {
+				items: 4
+			},
+			1200: {
+				items: 5
+			}
+		}
+	});
+</script>
+</html>
