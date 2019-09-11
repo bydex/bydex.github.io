@@ -603,22 +603,69 @@
 <div id="number" class="container">
     <div class="row">
         <div class="col-xl-12 p-0">
-            <div class="plan-bg plan_laptop">
+            <div class="plan-bg plan-laptop">
                 <div class="plan plan_standard border_red d-flex">
                     <div class="plan__item text text_weight_600 text-center w-25 button_rounded plan__item_active">Landing Page</div>
                     <div class="plan__item text text_weight_600 text-center w-25 button_rounded">Корпоративный</div>
                     <div class="plan__item text text_weight_600 text-center w-25 button_rounded">Каталог</div>
                     <div class="plan__item text text_weight_600 text-center w-25 button_rounded">Интернет-магазин</div>
+
+                    <div class="plan__item plan-laptop__js plan-laptop__item text text_weight_600 text-center w-100 button_rounded plan__item_active position-relative">Landing Page<i class="plan__hamburger fas fa-bars"></i>
+                        <div class="laptop__dropdown position-absolute w-100">
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Корпоративный</div>
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Каталог</div>
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Интернет-магазин</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="plan-bg plan_laptop colors__item_pinkToPurple">
+
+            <div id="laptop-2" class="plan-bg plan-laptop colors__item_pinkToPurple">
                 <div class="plan plan_red border_red d-flex">
                     <div class="plan__item text text_weight_600 text-center w-25 button_rounded plan__item_active">Landing Page</div>
                     <div class="plan__item text text_weight_600 text-center w-25 button_rounded">Корпоративный</div>
                     <div class="plan__item text text_weight_600 text-center w-25 button_rounded">Каталог</div>
                     <div class="plan__item text text_weight_600 text-center w-25 button_rounded">Интернет-магазин</div>
+
+                    <div class="plan__item plan-laptop__js plan-laptop__item text text_weight_600 text-center w-100 button_rounded plan__item_active position-relative">Подготовительный<i class="plan__hamburger fas fa-bars"></i>
+                        <div class="laptop__dropdown position-absolute w-100">
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Корпоративный</div>
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Каталог</div>
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Интернет-магазин</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            <div id="laptop-3" class="plan-bg plan-laptop">
+                <div class="plan plan_red border_red d-flex">
+                    <div class="plan__item plan-laptop__js plan-laptop__item text text_weight_600 text-center w-100 button_rounded position-relative plan__item_active" style='color: #dd1781 !important'>Подготовительный<i class="plan__hamburger fas fa-bars"></i>
+                        <div class="laptop__dropdown position-absolute w-100" style="color:white">
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Корпоративный</div>
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Каталог</div>
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Интернет-магазин</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="laptop-3" class="plan-bg plan-laptop">
+                <div class="plan plan_red border_red d-flex">
+                    <div class="plan__item plan-laptop__js plan-laptop__item text text_weight_600 text-center w-100 button_rounded position-relative plan__item_active" style='color: #dd1781 !important'>Базовый<i class="plan__hamburger fas fa-bars"></i>
+                        <div class="laptop__dropdown position-absolute w-100" style="color:white">
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Корпоративный</div>
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Каталог</div>
+                            <div class="plan__item plan-laptop__item d-block text text_weight_600 text-center">Интернет-магазин</div>
+                        </div>
+                    </div>
+                    <div class="plan plan_class plan_class-bright plan_tariff d-flex">
+                        <div class="plan__item text text-center plan__item_active">до 50</div>
+                        <div class="plan__item text text-center">до 100</div>
+                        <div class="plan__item text text-center">до 200</div>
+                        <div class="plan__item text text-center">до 600</div>
+                    </div>
+                </div>
+            </div>
+            
 
             <div class="plan-bg plan-bg_style plan-bg_tariff d-flex align-items-end justify-content-xl-around justify-content-lg-start flex-wrap">
                 <div class="plan m-0 plan_class plan_class-gray plan_class-gray text_uppercase d-flex">
@@ -829,9 +876,17 @@
 
     $(document).ready(function(){
         $(".plan__item").click(function(){
-            let main = $(this).parent();
             $(this).parent().children().removeClass("plan__item_active");
             $(this).addClass("plan__item_active");
+        });
+    });
+
+    $(document).ready(function(){
+        $(".plan-laptop__js").click(function(){
+            let $element = $(this);
+            console.log($element.find(".plan__dropdown"));
+            $element.find(".laptop__dropdown").toggleClass("d-block");
+            $element.find(".plan__hamburger").toggleClass("fa-times");
         });
     });
 </script>
