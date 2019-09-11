@@ -423,6 +423,10 @@ h5 {
 .header_style {
   padding: 15px 0;
 }
+.hamburger__img {
+  display: none;
+}
+
 
 .col-xl_1 {
   width: 95px;
@@ -646,7 +650,6 @@ h5 {
 }
 
 .pesontedan__title {
-  line-height: 76px;
   text-shadow: none;
 }
 
@@ -685,7 +688,7 @@ h5 {
 
 .pesontedan__title {
   height: 76px;
-  padding-right: 35px;
+  padding-right: 51px;
 }
 
 .pesontedan__text {
@@ -1093,7 +1096,7 @@ h5 {
 
 .plan__item {
   height: 48px;
-  line-height: 48px;
+  line-height: 48px !important;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -1139,7 +1142,7 @@ h5 {
 
 .plan_tariff .plan__item {
   width: 85px;
-  line-height: 30px;
+  line-height: 30px !important;
   height: 30px;
   font-size: 14px;
 }
@@ -1351,6 +1354,7 @@ a.pagination__page:not(:last-child) {
 }
 
 
+
 @media screen and (max-width: 1600px) {
   .container {
     margin-right: 150px;
@@ -1367,6 +1371,9 @@ a.pagination__page:not(:last-child) {
 @media screen and (max-width: 1500px) {
   .left-menu {
     display: none;
+  }
+  .hamburger__img {
+    display: block;
   }
 
   .container {
@@ -1412,6 +1419,16 @@ a.pagination__page:not(:last-child) {
     display: none;
   }
 }
+@media screen and (max-width: 1530px) {
+  .container {
+    margin-right: 75px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 991px) {
   .page-snippets {
     width: 679px;
@@ -1422,6 +1439,11 @@ a.pagination__page:not(:last-child) {
     position: relative;
     left: 44px;
   }
+
+
+  .plan_laptop {
+    padding: 45px 35px;
+  }
 }
 @media screen and (max-width: 884px) {
   .colors-wrapper {
@@ -1429,6 +1451,35 @@ a.pagination__page:not(:last-child) {
   }
 }
 @media screen and (max-width: 767px) {
+  .plan_laptop .plan .plan__item:not(:first-child) {
+    display: none;
+  }
+  .plan_laptop .plan .plan__item {
+    width: 100% !important;
+    text-align: left !important;
+    padding-left: 29px;
+  }
+
+
+
+
+  .pagination__page {
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 2px !important;
+  }
+  .pagination_wrapper {
+    padding-right: 33px !important;
+    padding-left: 33px !important;
+  }
+  .paginations__arrows {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+  }
+
   .footer {
     text-align: center;
   }
