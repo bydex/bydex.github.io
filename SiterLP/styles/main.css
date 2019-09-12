@@ -1117,57 +1117,60 @@ h5 {
   padding: 90px 50px;
 }
 
+
+/*selects*/
+.dropdown span {
+  font-family: 'Open Sans' !important;
+}
+.ui-state-disabled.ui-menu-item {
+  display: none !important;
+}
+.dropdown .ui-button .ui-icon {
+  background-position: 25px;
+}
+.dropdown .ui-button .ui-icon {
+  height: 20px;
+}
+#ui-id-2-button, #ui-id-1-button {
+  border-radius: 0;
+  background-color: #fff;
+  width: 100%;
+}
 .dropdown {
   width: 45%;
 }
-
-.dropdown__button_standard {
-  height: 40px;
-  padding-left: 16px;
+#ui-id-1-button, #ui-id-2-button {
+  color: #999999;
 }
-
-.dropdown__button_standard::after {
-  display: none;
+#ui-id-1-button:focus, #ui-id-2-button:focus {
+  outline-color: #343037;
+  color: #343037;
 }
-
-.dropdown__button_standard::before {
+#ui-id-1-menu .ui-menu-item .ui-menu-item-wrapper:hover, 
+#ui-id-2-menu .ui-menu-item .ui-menu-item-wrapper:hover {
+  background-color: #f0f0f0;
+  border-width: 0;
+}
+#ui-id-1-menu .ui-menu-item .ui-menu-item-wrapper, 
+#ui-id-2-menu .ui-menu-item .ui-menu-item-wrapper {
+  color: #343037;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 50px !important;
+  padding-left: 15px;
+}
+#ui-id-1-button::before,
+#ui-id-2-button::before {
   position: absolute;
   font-family: "icomoon" !important;
   content: "";
-  right: 13px;
+  font-size: 14px;
+  right: 15px;
+  top:13px;
   -webkit-transform: rotateX(180deg);
      -moz-transform: rotateX(180deg);
           transform: rotateX(180deg);
-  font-size: 14px;
-}
-
-.dropdown__button_standard,
-.dropdown__menu_standard {
-  width: 100%;
-}
-
-.dropdown__button, .dropdown__menu {
-  background: #fff;
-  cursor: pointer;
-  border: none;
-  color: #999999;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
-}
-
-.dropdown__menu {
-  padding: 0;
-}
-
-.dropdown__button:focus,
-.dropdown__button:hover {
-  outline: 0;
-  color: #48444b;
-}
-
-.dropdown-item {
-  line-height: 50px;
 }
 
 .alert__block {
@@ -1196,9 +1199,7 @@ h5 {
 
 
 
-#select.select:not(:-internal-list-box) {
-  overflow: hidden !important;
-}
+
 .plan-bg {
   padding: 45px 86px;
   margin: 0 14px;
@@ -1600,6 +1601,20 @@ a.pagination__page:not(:last-child) {
   }
 }
 @media screen and (max-width: 767px) {
+  #ui-id-1-button:focus, #ui-id-2-button:focus {
+    outline-color: #dc107e;
+  }
+  #ui-id-1-button::before,
+  #ui-id-2-button::before {
+    color: #dc107e;
+  }
+  #dropdown {
+    margin-top: 22px;
+  }
+
+
+
+
   .plans {
     display: none;
   }

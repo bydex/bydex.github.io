@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
 </head>
 <body>
 
@@ -80,7 +81,7 @@
                     <img src="./img/svg/hamburger.svg" alt="" class="hamburger__img">
                 </div>
 
-                <div class="select select_standard text_color_white d-flex align-items-center">
+                <div class="select_standard text_color_white d-flex align-items-center">
                     <img src="./img/svg/select__icon.svg" alt="" class="select__icon">
                     <i class="select__text text">
                         Астана <i class="text_weight_700">696-226</i>
@@ -541,29 +542,25 @@
         
         <div class="dropdown-lists">
             <div class="col-xl-8 bg_light bg_light-wrapper bg_light-wrapper bg-light_lists m-auto d-flex justify-content-between flex-xl-row flex-lg-row flex-md-row flex-column">
-                <div class="dropdown d-inline-block">
-                    <button type="button" class="dropdown__button dropdown__button_standard input_border text dropdown-toggle text-left" data-toggle="dropdown">
-                        Выпадающий список
-                    </but>
-                    <div class="dropdown__menu dropdown__menu_standard dropdown-menu">
-                        <a href="#" class="dropdown-item">Элемент 1</a>
-                        <a href="#" class="dropdown-item">Элемент 2</a>
-                        <a href="#" class="dropdown-item">Элемент 3</a>
-                        <a href="#" class="dropdown-item">Элемент 4</a>
-                        <a href="#" class="dropdown-item">Элемент 5</a>
-                    </div>
+                <div class="d-inline-block dropdown">
+                    <select name="speed" class="select">
+                        <option disabled selected>Выпадающий список</option>
+                        <option>Элемент 1</option>
+                        <option>Элемент 2</option>
+                        <option>Элемент 3</option>
+                        <option>Элемент 4</option>
+                        <option>Элемент 5</option>
+                    </select>
                 </div>
-                <div class="dropdown d-inline-block show">
-                    <button type="button" class="dropdown__button dropdown__button_standard input_border text dropdown-toggle text-left" data-toggle="dropdown">
-                        Выпадающий список
-                    </but>
-                    <div class="dropdown__menu dropdown__menu_standard dropdown-menu show">
-                        <a href="#" class="dropdown-item">Элемент 1</a>
-                        <a href="#" class="dropdown-item">Элемент 2</a>
-                        <a href="#" class="dropdown-item">Элемент 3</a>
-                        <a href="#" class="dropdown-item">Элемент 4</a>
-                        <a href="#" class="dropdown-item">Элемент 5</a>
-                    </div>
+                <div class="d-inline-block dropdown" id="dropdown">
+                    <select name="speed" class="select">
+                        <option disabled selected>Выпадающий список</option>
+                        <option>Элемент 1</option>
+                        <option>Элемент 2</option>
+                        <option>Элемент 3</option>
+                        <option>Элемент 4</option>
+                        <option>Элемент 5</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -604,9 +601,14 @@
 
 <div class="container">
     <div class="row">
-            <select id="select" class="select">
-                <option>Small select</option>
-            </select>
+        <select name="speed" class="select">
+            <option disabled selected>Выпадающий список</option>
+            <option>Элемент 1</option>
+            <option>Элемент 2</option>
+            <option>Элемент 3</option>
+            <option>Элемент 4</option>
+            <option>Элемент 5</option>
+        </select>
     </div>
 </div>
 <div class="container plans">
@@ -808,6 +810,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>  
@@ -855,6 +858,11 @@
             $element.find(".plan__hamburger").toggleClass("fa-times");
         });
     });
+
+
+    $( function() {
+        $( ".select" ).selectmenu();
+    } );
 </script>
 </body>
 </html>
