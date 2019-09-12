@@ -1194,110 +1194,87 @@ h5 {
   background-color: #f5e0e9;
 }
 
+
+
+#select.select:not(:-internal-list-box) {
+  overflow: hidden !important;
+}
 .plan-bg {
   padding: 45px 86px;
   margin: 0 14px;
 }
 
-.plan-bg_tariff {
-  margin: 0 70px;
-  padding: 25px 43px;
+.plan-tarrif-wrapper {
+  padding: 24px 61px;
+  margin: auto;
+  max-width: 1020px;
 }
-
-.plan-bg_style {
-  margin-top: 39px;
+.plan-wrapper {
+  padding: 46px 80px;
+  margin: 0px 14px;
 }
-
 .plan {
-  -webkit-border-radius: 28px;
-     -moz-border-radius: 28px;
-          border-radius: 28px;
-  border-width: 2px;
-  padding: 3px;
+  padding: 4px;
+  border: 2px solid;
+  width: 100%;
 }
-
-.plan__item {
-  height: 48px;
-  line-height: 48px !important;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  -moz-transition: 0.3s;
-  transition: 0.3s;
+.plan_rounded {
+  border-radius: 28px;
 }
-
-.plan__item_active {
+.plan_red {
+  border-color: #e12088;
+  color: #343037;
+}
+.plan_red .plan__item_active {
   background-color: #dd1781 !important;
   color: #fff !important;
 }
-
-.plan_red {
+.plan_white {
   border-color: #fff;
-}
-
-.plan_red .plan__item {
   color: #fff;
 }
-
-.plan_red .plan__item_active {
+.plan_white .plan__item_active {
   background-color: #fff !important;
-  color: #212121 !important;
+  color: #343037 !important;
 }
 
-.plan_class .plan__item {
-  width: 175px;
-  font-size: 15px;
-}
 
-.plan_class-gray .plan__item {
+.plan-tariff.plan_red {
+  margin-top: 50px;
+}
+.plan-tariff.plan_red .plan__item {
   background-color: #e7e7e7;
 }
-
-.plan_class-bright .plan__item {
-  background-color: #e7e7e730;
+.plan-tariff.plan_white .plan__item {
+  background-color: #e2e2e230;
 }
-
-.plan_class-bright .plan__item_active {
-  color: #dd1781 !important;
+.plan-tariff-1 .plan__item {
+  line-height: 52px;
+  height: 52px;
+  width: 175px;
 }
-
-.plan_class .plan__item:not(:last-child) {
+.plan-tariff-1 .plan__item:not(:last-child), 
+.plan-tariff-2 .plan__item:not(:last-child) {
   margin-right: 2px;
 }
-
-.plan_tariff .plan__item {
-  width: 85px;
-  line-height: 30px !important;
+.plan_tariff-1 {
+  max-width: 529px;
+}
+.plan-tariff-2 {
+  margin-top: auto;
+  max-width: 346px;
+}
+.plan-tariff-2 .plan__item {
   height: 30px;
-  font-size: 14px;
+  line-height: 30px;
+  width: 85px;
+}
+.plan__item {
+  width: 25%;
+  height: 48px;
+  line-height: 48px;
 }
 
-.plan__hamburger {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-     -moz-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-       -o-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  right: 20px;
-
-}
-.plan-laptop__item {
-  display: none;
-}
-.laptop__dropdown {
-  background-color: #212121;
-  opacity: 0.9;
-  left: 0;
-  top: -webkit-calc(100% + 10px);
-  top: -moz-calc(100% + 10px);
-  top: calc(100% + 10px);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: none;
-  z-index: 2;
-}
 
 
 .ctrs {
@@ -1544,6 +1521,15 @@ a.pagination__page:not(:last-child) {
   }
 }
 @media screen and (max-width: 1199px) {
+  .plan-tariff-2 {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .plan-tariff-2 .plan__item {
+    margin-right: 4px !important;
+  }
+
+
   .buttons_block {
     padding-right: 5px;
   }
@@ -1593,6 +1579,11 @@ a.pagination__page:not(:last-child) {
   }
 }
 @media screen and (max-width: 991px) {
+
+  .plan-wrapper {
+    padding: 46px 170px;
+    margin: 0px -160px;
+  }
   .page-snippets {
     width: 679px;
     margin: 0;
@@ -1602,49 +1593,15 @@ a.pagination__page:not(:last-child) {
     position: relative;
     left: 44px;
   }
-
-
-  .plan_laptop {
-    padding: 45px 35px;
-  }
 }
 @media screen and (max-width: 884px) {
   .colors-wrapper {
     left: 20px;
   }
-  .plan-bg {
-    padding: 45px 35px;
-  }
 }
 @media screen and (max-width: 767px) {
-  .plan .plan__item {
+  .plans {
     display: none;
-  }
-  .plan-laptop__item {
-    display: block !important;
-    width: 100% !important;
-    text-align: left !important;
-    padding-left: 29px;
-  }
-
-  #laptop-2 .plan,
-  #laptop-2 .plan-laptop__item {
-    -webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0;
-    background-color: transparent !important;
-    color: white !important;
-  }
-  #laptop-3 .plan,
-  #laptop-3 .plan-laptop__item {
-    -webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0;
-    border-color: #dd1781;
-  }
-
-  .plan .laptop__dropdown .plan__item {
-    color: white;
   }
   .pagination__page {
     font-size: 14px;
