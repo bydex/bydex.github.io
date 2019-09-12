@@ -58,7 +58,7 @@
         <a href="#number" class="item item_nav item_number hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
             <div class="item__img-wrapper d-flex align-items-center">
                     <div class="item__img-wrapper d-flex align-items-center">
-                        <img src="./img/svg/select__icon.svg" alt="" class="item__img">
+                        <span class="icon-phone"></span>
                     </div>
             </div>
             <p class="item__text text text_s d-inline-block">Алматы <i class="text_weight_700">3 14 226</i></p>
@@ -77,12 +77,10 @@
     <div class="header_style bg_gray">
         <div class="container">
             <div class="row page d-flex justify-content-between">
-                <div class="hamburger">
-                    <img src="./img/svg/hamburger.svg" alt="" class="hamburger__img">
-                </div>
+                <div class="hamburger"><span class="icon-hamburger"></span></div>
 
                 <div class="select_standard text_color_white d-flex align-items-center">
-                    <img src="./img/svg/select__icon.svg" alt="" class="select__icon">
+                    <span class="icon-phone"></span>
                     <i class="select__text text">
                         Астана <i class="text_weight_700">696-226</i>
                     </i>
@@ -785,8 +783,7 @@
 
 <div class="container ctrs">
     <div class="row">
-        <div class="col-xl_1"></div>
-        <div class="col-xl-10 p-0 d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
+        <div class="col-xl-10 p-0 m-auto d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
             <div class="ctr-wrapper ctr_1 w-50 colors__item_pinkToPurple">
                 <div class="ctr m-auto">
                     <p class="ctr__title text text_color_white text-center">Средний показатель качества<br> рекламных объявлений<br>(CTR) - 22,24% <i class="question text_weight_600 text_color_primary d-inline-block rounded-circle bg_white">?</i></p>
@@ -932,53 +929,5 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>  
 </body>
 <script src="./js/index.js"></script>
-<script type="text/javascript">
-    
-    $('.slider-1').slick({
-        dots: true,
-        responsive: [{
-            breakpoint: 1086,
-            settings: {
-                arrows: false,
-            }
-        },]
-    });
-
-    $(".slick-prev").clone().appendTo( ".slick-slider" );
-    $(".slick-next").clone().appendTo( ".slick-slider" );
-
-    $(".slick-prev:last").addClass("slick-prev_clonned slick-arrow_cloned");
-    $(".slick-next:last").addClass("slick-next_clonned slick-arrow_cloned");
-
-    $('.slick-prev_clonned').click(function(){
-        $(".slider-1").slick('slickPrev');
-    });
-    $('.slick-next_clonned').click(function(){
-        $(".slider-1").slick('slickNext');
-    });
-
-
-
-    $(document).ready(function(){
-        $(".plan__item").click(function(){
-            $(this).parent().children().removeClass("plan__item_active");
-            $(this).addClass("plan__item_active");
-        });
-    });
-
-    $(document).ready(function(){
-        $(".plan-laptop__js").click(function(){
-            let $element = $(this);
-            console.log($element.find(".plan__dropdown"));
-            $element.find(".laptop__dropdown").toggleClass("d-block");
-            $element.find(".plan__hamburger").toggleClass("fa-times");
-        });
-    });
-
-
-    $( function() {
-        $( ".select" ).selectmenu();
-    } );
-</script>
 </body>
 </html>

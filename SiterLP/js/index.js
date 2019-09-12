@@ -17,3 +17,52 @@ $(document).ready(function(){
         })
     });
 });
+
+// slider
+$('.slider-1').slick({
+    dots: true,
+    responsive: [{
+        breakpoint: 1086,
+        settings: {
+            arrows: false,
+        }
+    },]
+});
+
+
+// add cloned buttons for slider
+$(".slick-prev").clone().appendTo( ".slick-slider" );
+$(".slick-next").clone().appendTo( ".slick-slider" );
+
+$(".slick-prev:last").addClass("slick-prev_clonned slick-arrow_cloned");
+$(".slick-next:last").addClass("slick-next_clonned slick-arrow_cloned");
+
+$('.slick-prev_clonned').click(function(){
+    $(".slider-1").slick('slickPrev');
+});
+$('.slick-next_clonned').click(function(){
+    $(".slider-1").slick('slickNext');
+});
+
+
+// choose plan on click
+$(document).ready(function(){
+    $(".plan__item").click(function(){
+        $(this).parent().children().removeClass("plan__item_active");
+        $(this).addClass("plan__item_active");
+    });
+});
+
+
+$( function() {
+    $( ".select" ).selectmenu();
+} );
+
+
+
+// menu
+$(document).ready(function(){
+    $(".hamburger").click(function(){
+        $('.left-menu').toggleClass('d-block');
+    });
+});

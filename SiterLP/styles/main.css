@@ -294,13 +294,13 @@ h5 {
 }
 
 .ul__item:before {
-  content: "";
+  font-family: 'icomoon';
+  content: "\e903";
   position: absolute;
-  background-image: url("../img/svg/ul_check.svg");
-  height: 20px;
-  width: 20px;
+  font-size: 20px;
   top: 3px;
   left: 0;
+  color: #3b91e6;
 }
 
 .ol {
@@ -445,7 +445,9 @@ h5 {
 
 .item_nav {
   padding: 0 36px 0 26px;
+  height: 57px;
 }
+
 
 .item__img-wrapper {
   margin-right: 15px;
@@ -772,8 +774,8 @@ h5 {
 }
 
 .pesontedan input[type=checkbox] + label::after {
-  content: "";
-  background: url("../img/svg/context_arrow.svg") no-repeat center;
+  font-family: 'icomoon';
+  content: "\e901";
   -webkit-transform: rotate(180deg);
      -moz-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -1638,8 +1640,8 @@ a.pagination__page:not(:last-child) {
   .left-menu {
     display: none;
   }
-  .hamburger__img {
-    display: block;
+  .hamburger .icon-hamburger::before {
+    font-size: 24px;
   }
 
   .container {
@@ -1705,7 +1707,9 @@ a.pagination__page:not(:last-child) {
   }
 }
 @media screen and (max-width: 991px) {
-
+  .checkboxes__1 .checkbox {
+    margin-bottom: 10px !important;
+  }
   .plan-wrapper {
     padding: 46px 170px;
     margin: 0px -160px;
