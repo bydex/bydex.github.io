@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>gulp-scss-starter</title>
@@ -8,7 +9,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
@@ -259,9 +259,9 @@
                             <button class="button button_hovered hover text_color_white text_uppercase">кнопка при нажатии</button>
                         </div>
                         <div class="d-flex justify-content-xl-between justify-content-lg-start buttons__row buttons__big flex-wrap"> 
-                            <button class="button button_transparent hover text_color_white text_uppercase">обычная кнопка</button>
+                            <button class="button button_transparent hover text_color_white text_uppercase">обычная кнопка</but>
                             <button class="button button_hovered hover text_color_white text_uppercase">кнопка при наведении</button>
-                            <button class="button button_hovered hover text_color_white text_uppercase">кнопка при нажатии</button>
+                            <button class="button button_hovered hover text_color_white text_uppercase">кнопка при нажатии</but>
                         </div>
                         <div class="d-flex justify-content-between buttons__row buttons__row_rounded flex-wrap buttons-small">
                             <div class="buttons__small d-flex justify-content-between">
@@ -598,17 +598,133 @@
     </div>
 </div>
 
-
 <div class="container">
-    <div class="row">
-        <select name="speed" class="select">
-            <option disabled selected>Выпадающий список</option>
-            <option>Элемент 1</option>
-            <option>Элемент 2</option>
-            <option>Элемент 3</option>
-            <option>Элемент 4</option>
-            <option>Элемент 5</option>
-        </select>
+    <div class="row page">
+        <div class="wrapper-select-block w-100">
+            <div class="select_block select_red select__rounded text_weight_600">
+                <div id="select__active" class="select__active select__rounded d-flex align-items-center text-left">Landing Page</div>
+                <div id="select__list" class="select__list">
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Landing Page</p>
+                    </div>
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Корпоративный</p>
+                    </div>
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Каталог</p>
+                    </div>
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Интернет-магазин</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-select-block wrapper-select-block_bg w-100 position-relative">
+            <div class="select_block select_red select_red-white text_weight_600">
+
+                <div id="select__active" class="select__active d-flex align-items-center text-left">Подготовительный</div>
+
+                <div id="select__list" class="select__list">
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Подготовительный</p>
+                    </div>
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Корпоративный</p>
+                    </div>
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Каталог</p>
+                    </div>
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Интернет-магазин</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-select-block w-100">
+            <div class="select_block select_red select_white-red text_weight_600">
+                <div id="select__active" class="select__active d-flex align-items-center text-left">Подготовительный</div>
+                <div id="select__list" class="select__list">
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Подготовительный</p>
+                    </div>
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Корпоративный</p>
+                    </div>
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Каталог</p>
+                    </div>
+                    <div class="select__item">
+                        <p class="select__tariff text text-left">Интернет-магазин</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="plan-overflow">
+    <div class="container plan-overflow plan-overflow-1">
+        <div class="row page">
+            <div class="wrapper-select-block w-100 d-flex">
+                <div class="select_block select_red select_all-red text_weight_600">
+                    <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
+                    <div id="select__list" class="select__list">
+                        <div class="select__item">
+                            <p class="select__tariff text text-left">Базовый</p>
+                        </div>
+                        <div class="select__item">
+                            <p class="select__tariff text text-left">Корпоративный</p>
+                        </div>
+                        <div class="select__item">
+                            <p class="select__tariff text text-left">Каталог</p>
+                        </div>
+                        <div class="select__item">
+                            <p class="select__tariff text text-left">Интернет-магазин</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan plan-tariff plan_red border-0 p-0">
+                    <div class="plan-tariff-2 d-flex">
+                        <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
+                        <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
+                        <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
+                        <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="plan-overflow colors__item_pinkToPurple">
+    <div class="container plan-overflow plan-overflow-2">
+        <div class="row page">
+            <div class="wrapper-select-block wrapper-select-block_bg w-100 d-flex">
+                <div class="select_block select_red select_all-red text_weight_600">
+                    <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
+                    <div id="select__list" class="select__list">
+                        <div class="select__item">
+                            <p class="select__tariff text text-left">Базовый</p>
+                        </div>
+                        <div class="select__item">
+                            <p class="select__tariff text text-left">Корпоративный</p>
+                        </div>
+                        <div class="select__item">
+                            <p class="select__tariff text text-left">Каталог</p>
+                        </div>
+                        <div class="select__item">
+                            <p class="select__tariff text text-left">Интернет-магазин</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan plan-tariff plan_white d-flex border-0 p-0">
+                    <div class="plan-tariff-2 d-flex">
+                        <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
+                        <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
+                        <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
+                        <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="container plans">
@@ -815,7 +931,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>  
 </body>
-<script src="./js/main.js"></script>
+<script src="./js/index.js"></script>
 <script type="text/javascript">
     
     $('.slider-1').slick({
