@@ -1295,6 +1295,9 @@ h5 {
   z-index: -2;
   background-image: linear-gradient(to right, #b5446e 0%, #9d44b5 100%);
 }
+.mobile-tariff {
+  display: none;
+}
 .plan-overflow {
   overflow-x: auto;
   overflow-y: visible;
@@ -1723,6 +1726,10 @@ a.pagination__page:not(:last-child) {
   }
 }
 @media screen and (max-width: 767px) {
+  .mobile-tariff {
+    display: block;
+  }
+
   #ui-id-1-button:focus, #ui-id-2-button:focus {
     outline-color: #dc107e;
   }
