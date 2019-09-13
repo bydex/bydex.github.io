@@ -1371,7 +1371,7 @@ h5 {
   background-color: #e7e7e7;
 }
 .plan-tariff.plan_white .plan__item {
-  background-color: #e2e2e230;
+  background-color: rgba(226, 226, 226, .3);
 }
 .plan-tariff-1 .plan__item {
   line-height: 52px;
