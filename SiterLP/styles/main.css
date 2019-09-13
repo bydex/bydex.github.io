@@ -1785,7 +1785,9 @@ a.pagination__page:not(:last-child) {
 }
 @media screen and (max-width: 767px) {
   .checkboxes__2 {
-    padding-right: 80px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 321px;
   }
   .checkboxes__2 .checkboxes__line:last-child {
     margin-right: 0 !important;
