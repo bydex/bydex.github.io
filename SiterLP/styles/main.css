@@ -1528,6 +1528,7 @@ h5 {
 
 .tbody_white tr:nth-child(2n+1) {
   background: url("../img/bg_white-bg.png") center;
+  background-position-x: -7px;
 }
 
 .pagination-wrapper {
