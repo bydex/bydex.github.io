@@ -66,3 +66,22 @@ $(document).ready(function(){
         $('.left-menu').toggleClass('d-block');
     });
 });
+
+
+
+
+
+
+$(document).ready(function() {
+    menu();
+  });
+  $(window).resize(function() {
+    menu();
+  });
+  function menu() {
+    if ($(window).width() <= 1500) {
+        $('.logo_left-menu').click(function(){
+            $('.left-menu').removeClass('d-block');
+        })
+    }
+  }

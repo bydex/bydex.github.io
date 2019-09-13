@@ -461,7 +461,7 @@ h5 {
 .header_style {
   padding: 15px 0;
 }
-.hamburger__img {
+.icon-hamburger {
   display: none;
 }
 
@@ -1639,6 +1639,9 @@ a.pagination__page:not(:last-child) {
 @media screen and (max-width: 1500px) {
   .left-menu {
     display: none;
+  }
+  .icon-hamburger {
+    display: block;
   }
   .hamburger .icon-hamburger::before {
     font-size: 24px;
