@@ -701,7 +701,7 @@ main {
 
 /* CHECKBOXES */
 .checkboxes__1 {
-  padding: 28px 0 46px 28px;
+  padding: 27px 0 46px 28px;
 }
 
 .checkboxes__2 {
@@ -741,6 +741,7 @@ main {
   height: 100%;
   background-color: #dc107e;
   left: 0;
+  top: 0;
 }
 .pesontedan:hover {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.14);
@@ -750,6 +751,8 @@ main {
 .pesontedan__title {
   text-shadow: none;
   transition: .3s;
+  padding-right: 51px;
+  line-height: 18px !important;
 }
 
 .pesontedan input {
@@ -763,11 +766,12 @@ main {
   display: block;
   padding: 0 0 0 31px;
   background: #fff;
-  line-height: 3;
   cursor: pointer;
   text-shadow: 0 1px 0 #333131;
   font-size: 17px;
-  height: 76px;
+  min-height: 76px;
+  padding-top: 32px;
+  padding-bottom: 27px;
 }
 
 .pesontedan-content {
@@ -788,11 +792,6 @@ main {
   background: #fff;
 }
 
-.pesontedan__title {
-  height: 76px;
-  padding-right: 51px;
-}
-
 .pesontedan__text {
   padding: 10px 70px 30px 0;
 }
@@ -806,17 +805,17 @@ main {
 /* Icon */
 .pesontedan label::after {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 29px;
+  top: 38px;
   display: block;
-  width: 76px;
-  height: 76px;
-  line-height: 4.5;
-  text-align: center;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+  font-size: 21px;
+  height: 12px;
+  line-height: 12px;
+  opacity: 0.2;
 }
 
 .pesontedan input[type=checkbox] + label::after {
@@ -962,33 +961,36 @@ main {
   margin-top: 120px;
   background: url("../img/dark_bg.png") center no-repeat;
   margin-bottom: 82px;
+  padding-top: 97px;
+  padding-bottom: 122px;
 }
 
+.forms-checkbox-wrapper {
+  margin: auto;
+  max-width: 380px;
+}
+.forms-wrapper {
+  margin-top: 67px !important;
+}
 .form__title_dark {
-  padding: 97px 0 48px 0;
-}
-
-.form__number_dark {
-  margin: 0 -35px !important;
+  padding: 0 0 48px 0;
+  max-width: 670px;
 }
 
 .form__undertext_dark {
-  margin: 30px -35px 67px -35px;
+  margin-top: 30px;
 }
 
 .form__checkbox_dark {
   font-size: 14px;
-  max-width: 280px;
+  max-width: 100%;
   margin: 40px 0 12px 0;
 }
 
 .form__button {
-  width: 236px;
+  max-width: 236px;
 }
 
-.form__button_dark {
-  margin-bottom: 89px;
-}
 
 .form__undertext_red {
   color: #dd1781;
@@ -1000,16 +1002,17 @@ main {
 }
 
 .form__number {
-  line-height: 32px;
-  padding: 37px 42px 34px 40px;
-  width: 420px;
-  height: 111px;
-  margin: auto !important;
+  line-height: 90px;
+  padding: 0 42px 0 40px;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 420px;
 }
 
 .form__title {
   font-size: 46px;
   line-height: 48px;
+  margin: auto;
 }
 
 .form__undertext {
@@ -1116,6 +1119,8 @@ main {
 .undercheckbox-text {
   font-size: 14px;
   margin-bottom: 53px;
+  text-align: left;
+  padding-left: 36px;
 }
 
 
@@ -2059,8 +2064,9 @@ a.pagination__page:not(:last-child) {
     margin-bottom: 4px;
   }
 
-  .slick-slider {
-    margin-bottom: 90px !important;
+  .slider-1 {
+    margin-top: 40px;
+    margin-bottom: 70px !important;
   }
 
   .dark-form {
@@ -2068,28 +2074,35 @@ a.pagination__page:not(:last-child) {
     margin-bottom: 140px;
   }
 
+
+
   .pesontedan label {
-    padding-left: 10px;
+    padding-left: 21px;
   }
-
   .pesontedan-content {
-    padding-left: 10px !important;
+    padding-left: 21px !important;
   }
-
   .pesontedan__text {
     padding-right: 20px;
   }
+  .pesontedan__title {
+    font-size: 18px;
+  }
+  .pesontedan label::after {
+    font-size: 14px;
+  }
+
+  .slider__item {
+    min-height: 170px;
+  }
+
 
   .form__number {
-    width: 290px;
-    height: 63px;
-    padding: 0;
-    line-height: 55px;
+    
   }
 
   .form__undertext {
-    margin-left: 0;
-    margin-right: 0;
+
   }
 
   .dropwdown-lists .bg_light.bg_light-lists {
@@ -2109,11 +2122,5 @@ a.pagination__page:not(:last-child) {
   }
 }
 @media screen and (max-width: 350px) {
-  .form__number {
-    width: 100%;
-  }
 
-  .form__main-wrapper {
-    width: 90%;
-  }
 }

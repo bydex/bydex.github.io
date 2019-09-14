@@ -400,7 +400,6 @@
         <div class="row">
             <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
             <div class="col-lg-10 col">
-
                 <div class="navigaonusing">
                     <div class="gaonutosal">
                         <div class="pesontedan text_color_primary">
@@ -434,7 +433,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -442,7 +440,7 @@
     <div class="container">
         <div class="row">
             <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
-            <div class="col-xl-10">
+            <div class="col-lg-10 col">
                 <div class="slider slider-1 slider_standard">
                     <div class="slider__item slider__item_blue"></div>
                     <div class="slider__item slider__item_pink"></div>
@@ -452,10 +450,11 @@
             </div> 
         </div>
     </div>
+
     <div class="container add-links">
         <div class="row">
             <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
-            <div class="col-xl-8">
+            <div class="col-lg-8 col-12">
                 <p class="add-links__text add-links__text_standard text text_color_primary">
                     Одним из самых эффективных способов расширения объявлений являются, конечно же. дополнительные ссылки. Данная функция позволяет добавлять до 10 ссылок на страницы вашего сайта. Хотите чтобы объявление стало более заметным и информативным? И в то же время оказало помощь потенциальному клиенту и сориентировало его на вашем сайте? Тогда добавление дополнительных ссылок — необходимый шаг для повышения эффективности вашей контекстной кампании. Но не стоит забывать и о фактической пользе для посетителя — если в объявлениях будут размещены ссылки на бесполезные для пользователя разделы сайта, то он просто тут же покинет ваш ресурс.
                 </p>
@@ -463,7 +462,7 @@
         </div>
         <div class="row">
             <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
-            <div class="col-xl-9">
+            <div class="col-xl-9 col">
                 <a href="#" class="link_decoration_none">
                     <img src="./img/add-links__img.png" alt="" class="add-links__img">
                     <p class="add-links__undertext text text_m text_color_primary under">
@@ -473,23 +472,30 @@
             </div>
         </div>
     </div>
+
     <div id="request" class="dark-form dark-form_standard">
         <div class="container">
             <form action="" class="form form_dark text-center text_color_white">
                 <div class="row">
-                    <div class="form__title-wrapper m-auto">
+                    <div class="col-xl-8 col-lg-9 col-md-11 m-auto">
                         <h2 class="form__title form__title_dark text_uppercase">
-                            Остались вопросы?<br>Звоните специалистам!
+                            Остались вопросы? Звоните специалистам!
                         </h2>
-                    </div>
+                    </div>  
                 </div>
+
                 <div class="row">
-                    <div class="form__main-wrapper m-auto">
+                    <div class="col-xl-5 col-lg-6 col-md-7 m-auto">
                         <h2 class="form__number form__number_dark text_weight_300 border_red m-auto position-relative">+7 7273 <i class="text_weight_800">124 226</i></h2>
                         <p class="form__undertext form__undertext_dark text">
                             или оставьте заявку и <a href="#" class="form__undertext_red link_decoration_none">мы свяжемся с вами</a>
                         </p>
-                        <div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-6 p-0 m-auto">
+                        <div class="forms-wrapper forms-checkbox-wrapper m-auto w-100">
                             <div class="form__item-wrapper" id="user">
                                 <input class="w-100 form__item form__item_exp" name="user" required placeholder="Иванов Сергей">
                             </div>
@@ -499,19 +505,18 @@
                             <div class="form__item-wrapper" id="email">
                                 <input class="w-100 form__item form__item_exp" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
                             </div>
-                            
                         </div>
-                            
-                        <label class="checkbox form__checkbox form__checkbox_dark checkbox_white d-inline text_color_white">Согласен с условиями обработки персональных данных
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark checkmark_white checkmark_standard"></span>
-                        </label>
+                        <div class="forms-checkbox-wrapper text-left">
+                            <label class="checkbox form__checkbox form__checkbox_dark checkbox_white d-inline-block text_color_white">Разрешаю обработку персональных данных
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark checkmark_white checkmark_standard"></span>
+                            </label>
+                        </div>
                         <p class="undercheckbox-text text text_color_white">* — обязательные для заполнения поля</p>
                         <input class="button form__button form__button_dark hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
                     </div>
                 </div>
-            </form>        
-                    
+            </form>              
         </div>
     </div>
     <div id="contacts" class="light-form">

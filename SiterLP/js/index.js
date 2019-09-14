@@ -22,7 +22,7 @@ $(document).ready(function(){
     $('.slider-1').slick({
         dots: true,
         responsive: [{
-            breakpoint: 1086,
+            breakpoint: 767,
             settings: {
                 arrows: false,
             }
@@ -31,8 +31,8 @@ $(document).ready(function(){
 
 
     // add cloned buttons for slider
-    $(".slick-prev").clone().appendTo( ".slick-slider" );
-    $(".slick-next").clone().appendTo( ".slick-slider" );
+    $(".slick-prev").clone().appendTo( ".slider-1" );
+    $(".slick-next").clone().appendTo( ".slider-1" );
 
     $(".slick-prev:last").addClass("slick-prev_clonned slick-arrow_cloned");
     $(".slick-next:last").addClass("slick-next_clonned slick-arrow_cloned");
@@ -90,12 +90,8 @@ $(document).ready(function(){
 
     $('.pesontedan>input[type="checkbox"]'). click(function(){
         $title = $(this).parent().find($('.pesontedan__title'));
-        if($(this).prop("checked") == true){
-            $title.removeClass('text');
-        }
-        else {
-            $title.addClass('text');
-        }
+
+        ($(this).prop("checked")) ? $title.removeClass('text') :  $title.addClass('text');
     })
 });
 
