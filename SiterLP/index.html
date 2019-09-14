@@ -16,166 +16,174 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
 </head>
 <body>
+<main class="position-relative">
+    <div class="left-menu left-menu_standard">
+        <div class="logo logo_left-menu">
+            <img src="./img/logo.png"  class="logo__img logo__img_style" alt="logo">
+        </div>
 
-<div class="left-menu left-menu_standard">
-    <div class="logo logo_left-menu">
-        <img src="./img/logo.png"  class="logo__img logo__img_style" alt="logo">
-    </div>
+        <nav class="nav">
+            <a href="#aboutus" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
+                    <div class="item__img-wrapper d-flex align-items-center"><img src="./img/item__img_about.png" alt="" class="item__img"></div>
+                <p class="item__text text text_s d-inline-block">о нас</p>
+            </a>
 
-    <nav class="nav">
-        <a href="#aboutus" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                <div class="item__img-wrapper d-flex align-items-center"><img src="./img/item__img_about.png" alt="" class="item__img"></div>
-            <p class="item__text text text_s d-inline-block">о нас</p>
-        </a>
+            <a href="#services" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
+                    <div class="item__img-wrapper d-flex align-items-center"><img src="./img/item__img_services.png" alt="" class="item__img"></div>
+                <p class="item__text text text_s d-inline-block">Услуги</p>
+                <i class="item__chevron chevron fas fa-chevron-right ml-auto"></i>
+            </a>
 
-        <a href="#services" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                <div class="item__img-wrapper d-flex align-items-center"><img src="./img/item__img_services.png" alt="" class="item__img"></div>
-            <p class="item__text text text_s d-inline-block">Услуги</p>
-            <i class="item__chevron chevron fas fa-chevron-right ml-auto"></i>
-        </a>
-
-        <a href="#portfolio" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                <div class="item__img-wrapper d-flex align-items-center">
-                    <img src="./img/item__img_portfolio.png" alt="" class="item__img">
-                </div>
-            <p class="item__text text text_s d-inline-block">Портфолио</p>
-        </a>
-
-        <a href="#contacts" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                <div class="item__img-wrapper d-flex align-items-center">
-                    <img src="./img/item__img_contacts.png" alt="" class="item__img">
-                </div>
-            <p class="item__text text text_s d-inline-block">Контакты</p>
-        </a>
-
-        <a href="#request" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                <div class="item__img-wrapper d-flex align-items-center">
-                    <img src="./img/item__img_request.png" alt="" class="item__img">
-                </div>
-            <p class="item__text text text_s d-inline-block">оставить заявку</p>
-        </a>
-
-        <a href="#number" class="item item_nav item_number hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-            <div class="item__img-wrapper d-flex align-items-center">
+            <a href="#portfolio" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
                     <div class="item__img-wrapper d-flex align-items-center">
-                        <span class="icon-phone"></span>
+                        <img src="./img/item__img_portfolio.png" alt="" class="item__img">
                     </div>
-            </div>
-            <p class="item__text text text_s d-inline-block">Алматы <i class="text_weight_700">3 14 226</i></p>
-            <i class="item__chevron chevron fas fa-chevron-right ml-auto"></i>
-        </a>
+                <p class="item__text text text_s d-inline-block">Портфолио</p>
+            </a>
 
-        <a href="#showreel" class="item item_nav item_show hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
+            <a href="#contacts" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
+                    <div class="item__img-wrapper d-flex align-items-center">
+                        <img src="./img/item__img_contacts.png" alt="" class="item__img">
+                    </div>
+                <p class="item__text text text_s d-inline-block">Контакты</p>
+            </a>
+
+            <a href="#request" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
+                    <div class="item__img-wrapper d-flex align-items-center">
+                        <img src="./img/item__img_request.png" alt="" class="item__img">
+                    </div>
+                <p class="item__text text text_s d-inline-block">оставить заявку</p>
+            </a>
+
+            <a href="#number" class="item item_nav item_number hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
                 <div class="item__img-wrapper d-flex align-items-center">
-                    <img src="./img/svg/item__img_showreel.svg" alt="" class="item__img">
-                </div>
-            <p class="item__text text text_s d-inline-block">Showreel 2018</p>
-        </a>
-    </nav>
-</div>
-<header class="header">
-    <div class="header_style bg_gray">
-        <div class="container">
-            <div class="row page d-flex justify-content-between">
-                <div class="hamburger"><span class="icon-hamburger"></span></div>
-
-                <div class="select_standard text_color_white d-flex align-items-center">
-                    <span class="icon-phone"></span>
-                    <i class="select__text text">
-                        Астана <i class="text_weight_700">696-226</i>
-                    </i>
-                    <img class="select__chevron" src="./img/select__chevron.png"></img>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="blog blog_bg">
-        <div class="container">
-            <div class="row">
-                <div class="page-snippets">
-                    <div class="blog__nav blog__nav_style">
-                        <div class="map blog__map">
-                            <a  href="#" 
-                                class="map__item map__item_nav text text_xs text_color_white hover hover__link_white">
-                                <i class="map__arrow fas fa-arrow-left"></i>Главная
-                            </a>
-                            <a  href="#" 
-                                class="map__item map__item_nav text text_xs text_color_white hover hover__link_white">
-                                <i class="map__arrow fas fa-arrow-left"></i>Блог
-                            </a>
+                        <div class="item__img-wrapper d-flex align-items-center">
+                            <span class="icon-phone"></span>
                         </div>
-                        <h1 class="blog__title title__h1 text_color_white text_weight_800 text-xl-left text-lg-left text-md-center text-center">Блог</h1>
-                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="snippets text text_color_primary d-flex align-item-center flex-column">
+                <p class="item__text text text_s d-inline-block">Алматы <i class="text_weight_700">3 14 226</i></p>
+                <i class="item__chevron chevron fas fa-chevron-right ml-auto"></i>
+            </a>
 
-    <div class="container order-1">
-        <div class="row d-flex flex-nowrap">
-            <div class="col-xl_1"></div>
-            <div class="page-snippets page_texts">
-                <div class="texts">
-                    <div class="texts__item">
-                        <h1 id="aboutus" class="texts__title_h1">Компания «siter.kz»</h1>
-                        <p class="texts__para text">
-                            Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
-                            <br><br>
-                            Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
-                            <br><br>
-                            Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.
-                        </p>
+            <a href="#showreel" class="item item_nav item_show hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
+                    <div class="item__img-wrapper d-flex align-items-center">
+                        <img src="./img/svg/item__img_showreel.svg" alt="" class="item__img">
                     </div>
-                    <div class="texts__item">
-                        <h2 class="texts__title texts__title_h2">Разработка сайтов</h2>
-                        <p class="texts__para text">
-                            Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
-                            <br><br>
-                            Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.
-                        </p>
+                <p class="item__text text text_s d-inline-block">Showreel 2018</p>
+            </a>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="header_style bg_gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between">
+                        <div class="hamburger"><span class="icon-hamburger"></span></div>
+
+                        <div class="select_standard text_color_white d-flex align-items-center">
+                            <span class="icon-phone"></span>
+                            <i class="select__text text">
+                                Астана <i class="text_weight_700">696-226</i>
+                            </i>
+                            <img class="select__chevron" src="./img/select__chevron.png"></img>
+                        </div>
                     </div>
-                    <div class="texts__item">
-                        <h3 class="texts__title">Индивидуальные решения</h3>
-                        <p class="texts__para text">
-                            Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
-                            <br><br>
-                            Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
-                        </p>
-                    </div>
-                    <div class="texts__item">
-                        <h4 class="texts__title">Заголовок h4</h4>
-                        <p class="texts__para text">
-                            Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24. Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
-                            <br><br>
-                            Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
-                        </p>
-                    </div>
-                    <div class="texts__item">
-                        <h6 class="texts__title">Заголовок h6</h6>
-                        <p class="texts__para text">
-                            Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="colors-wrapper">
-                <div class="colors colors_standard">
-                    <li class="colors__item colors__item_standard colors__item_pink"></li>
-                    <li class="colors__item colors__item_standard colors__item_brightGray"></li>
-                    <li class="colors__item colors__item_standard colors__item_blue"></li>
-                    <li class="colors__item colors__item_standard colors__item_blueToPurple"></li>
-                    <li class="colors__item colors__item_standard colors__item_pinkToWhite"></li>
-                    <li class="colors__item colors__item_standard colors__item_pinkToPurple"></li>
-                    <li class="colors__item colors__item_standard colors__item_gray"></li>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl_1"></div>
-            <div class="col-xl-5 p-0">
-                <div class="page">
+        <div class="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="blog__nav">
+                            <div class="map">
+                                <a  href="#" 
+                                    class="map__item text text_xs text_color_white hover hover__link_white">
+                                    <i class="map__arrow fas fa-arrow-left"></i>Главная
+                                </a>
+                                <span 
+                                    class="map__item text text_xs text_color_white">
+                                    <i class="map__arrow fas fa-arrow-left"></i>Блог
+                                </span>
+                            </div>
+                            <h1 class="blog__title text_color_white text_weight_800 text-md-left text-center">Блог</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="snippets text text_color_primary d-flex align-item-center flex-column">
+
+        <div class="container order-1">
+            <div class="row d-flex flex-nowrap">
+                <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+                <div class="col-xl-8 col-lg-9 col-md-10 col-11">
+                    <div class="texts">
+                        <div class="texts__item">
+                            <h1 id="aboutus" class="texts__title_h1">Компания «siter.kz»</h1>
+                            <p class="texts__para text">
+                                Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+                            </p>
+                            <p class="texts__para text">
+                                Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+                            </p>
+                            <p class="texts__para text">
+                                Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.
+                            </p>
+                        </div>
+                        <div class="texts__item">
+                            <h2 class="texts__title_h2-3">Разработка сайтов</h2>
+                            <p class="texts__para text">
+                                Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+                            </p>
+                            <p class="texts__para text">
+                                Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24.
+                            </p>
+                        </div>
+                        <div class="texts__item">
+                            <h3 class="texts__title_h2-3">Индивидуальные решения</h3>
+                            <p class="texts__para text">
+                                Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+                            </p>
+                            <p class="texts__para text">
+                                Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+                            </p>
+                        </div>
+                        <div class="texts__item">
+                            <h4 class="texts__title">Заголовок h4</h4>
+                            <p class="texts__para text">
+                                Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24. Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+                            </p>
+                            <p class="texts__para">
+                                Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+                            </p>
+                        </div>
+                        <div class="texts__item">
+                            <h6 class="texts__title_h2-3">Заголовок h6</h6>
+                            <p class="texts__para text">
+                                Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 d-none d-lg-flex ml-auto justify-content-xl-start justify-content-lg-end">
+                    <div class="colors-wrapper">
+                        <div class="colors colors_standard">
+                            <li class="colors__item colors__item_standard colors__item_pink"></li>
+                            <li class="colors__item colors__item_standard colors__item_brightGray"></li>
+                            <li class="colors__item colors__item_standard colors__item_blue"></li>
+                            <li class="colors__item colors__item_standard colors__item_blueToPurple"></li>
+                            <li class="colors__item colors__item_standard colors__item_pinkToWhite"></li>
+                            <li class="colors__item colors__item_standard colors__item_pinkToPurple"></li>
+                            <li class="colors__item colors__item_standard colors__item_gray"></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+                <div class="col">
                     <div class="links d-flex flex-wrap">
                         <a href="http://facebook.com" class="link links__item link_decoration_none">
                             <img class="link__img" src="./img/link.png" alt="">
@@ -189,53 +197,51 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container order-xl-2 order-lg-2 order-md-2 order-3">
-        <div id="services" class="row lists lists_standard d-flex flex-xl-nowrap flex-lg-nowrap flex-md-wrap">
-            <div class="col-xl_1"></div>
-            <div class="col-xl-5 p-0">
-                <div class="page">
-                    <h5 class="lists__title">Маркированный список:</h5>
-                    <ul class="ul text">
-                        <li class="ul__item list text">
-                            Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
-                        </li>
-                        <br>
-                        <li class="ul__item list text">
-                            Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
-                        </li>
-                        <br>
-                        <li class="ul__item list text">
-                            Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24
-                        </li>
-                    </ul>
+        <div class="container order-xl-2 order-lg-2 order-md-2 order-3">
+            <div id="services" class="row lists lists_standard d-flex flex-xl-nowrap flex-lg-nowrap flex-md-wrap">
+                <div class="d-none d-lg-block col-1 col-lg-hidden"></div>
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="list1-wrapper">
+                        <h5 class="lists__title">Маркированный список:</h5>
+                        <ul class="ul text">
+                            <li class="ul__item list text">
+                                Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+                            </li>
+                            <br>
+                            <li class="ul__item list text">
+                                Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+                            </li>
+                            <br>
+                            <li class="ul__item list text">
+                                Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xl-5 p-0">
-                <div class="page">
-                    <h5 class="lists__title">Нумерованный список:</h5>
-                    <ol class="ol">
-                        <li class="ol__item list text">
-                            Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
-                        </li>
-                        <br>
-                        <li class="ol__item list text">
-                            Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
-                        </li>
-                        <br>
-                        <li class="ol__item list text">
-                            Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24
-                        </li>
-                    </ol>
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="list1-wrapper">
+                        <h5 class="lists__title">Нумерованный список:</h5>
+                        <ol class="ol">
+                            <li class="ol__item list text">
+                                Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+                            </li>
+                            <br>
+                            <li class="ol__item list text">
+                                Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+                            </li>
+                            <br>
+                            <li class="ol__item list text">
+                                Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container order-xl-3 order-lg-3 order-md-3 order-2">
-        <div class="row">
-            <div class="col-xl_1"></div>
-            <div class="col-xl-6 p-0">
-                <div class="page">
+        <div class="container order-xl-3 order-lg-3 order-md-3 order-2">
+            <div class="row">
+                <div class="d-none d-lg-block col-1 col-lg-hidden"></div>
+                <div class="col">
                     <div class="selected-texts">
                         <h5 class="selected-texts__item text_selected_gradient-1 text_color_white text_weight_600 d-inline-block">Выделенный текст</h5>
                         <br>
@@ -245,11 +251,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xl_1"></div>
-            <div class="col-xl-11 p-0">
-                <div class="page">
+            <div class="row">
+                <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+                <div class="col">
                     <div class="buttons buttons_block">
                         <div class="d-flex justify-content-xl-between justify-content-lg-start buttons__row buttons__big flex-wrap">
                             <button class="button hover text_color_white text_uppercase">обычная кнопка</button>
@@ -293,527 +297,563 @@
             </div>
         </div>
     </div>
-</div>
-<div id="portfolio" class="lists-2 d-flex justify-content-center">
+    <div id="portfolio" class="lists-2 d-flex justify-content-center">
+        <div class="container">
+            <div class="row text_color_white lists lists_2 lex-xl-nowrap flex-lg-nowrap flex-md-wrap">
+                <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="list1-wrapper">
+                        <h5 class="lists__title">Маркированный список:</h5>
+                        <ul class="ul text">
+                            <li class="ul__item list text">
+                                Посетители сайта <i class="text_weight_600">стали быстрее находить интересующий их товар в каталоге</i> и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+                            </li>
+                            <br>
+                            <li class="ul__item list text">
+                                Разделение информации для разных клиентов и подключение аналитики <i class="text_weight_600">помогает маркетологу эффективнее разрабатывать рекламные предложения.</i>
+                            </li>
+                            <br>
+                            <li class="ul__item list text">
+                                Система управления 1С-Битрикс за счет своего удобства <i class="text_weight_600">экономит время работы с сайтом</i> и позволяет интегрировать его с CRM Битрикс24
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="list1-wrapper">
+                        <h5 class="lists__title">Нумерованный список:</h5>
+                        <ol class="ol">
+                            <li class="ol__item list text">
+                                Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
+                            </li>
+                            <br>
+                            <li class="ol__item list text">
+                                Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
+                            </li>
+                            <br>
+                            <li class="ol__item list text">
+                                Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <div class="row text_color_white lists lists_2 lex-xl-nowrap flex-lg-nowrap flex-md-wrap">
-            <div class="col-xl_1"></div>
-            <div class="col-xl-5 p-0">
-                <div class="page">
-                    <h5 class="lists__title">Маркированный список:</h5>
-                    <ul class="ul text">
-                        <li class="ul__item list text">
-                            Посетители сайта <i class="text_weight_600">стали быстрее находить интересующий их товар в каталоге</i> и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
-                        </li>
-                        <br>
-                        <li class="ul__item list text">
-                            Разделение информации для разных клиентов и подключение аналитики <i class="text_weight_600">помогает маркетологу эффективнее разрабатывать рекламные предложения.</i>
-                        </li>
-                        <br>
-                        <li class="ul__item list text">
-                            Система управления 1С-Битрикс за счет своего удобства <i class="text_weight_600">экономит время работы с сайтом</i> и позволяет интегрировать его с CRM Битрикс24
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xl-5 p-0">
-                <div class="page">
-                    <h5 class="lists__title">Нумерованный список:</h5>
-                    <ol class="ol">
-                        <li class="ol__item list text">
-                            Посетители сайта <i class="text_weight_600">стали быстрее находить интересующий их товар в каталоге</i> и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
-                        </li>
-                        <br>
-                        <li class="ol__item list text">
-                            Разделение информации для разных клиентов и подключение аналитики <i class="text_weight_600">помогает маркетологу эффективнее разрабатывать рекламные предложения.</i>
-                        </li>
-                        <br>
-                        <li class="ol__item list text">
-                            Система управления 1С-Битрикс за счет своего удобства <i class="text_weight_600">экономит время работы с сайтом</i> и позволяет интегрировать его с CRM Битрикс24
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-xl_1"></div>
-        <div class="col-xl-11 p-0">
-            <div class="page">
-                <div class="checkboxes d-flex justify-content-between checkboxes_standard flex-wrap">
-                    <div class="checkboxes__1">
-                        <div class="checkboxes__line">
-                            <label class="checkbox d-inline">Яндекс.Директ
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark checkmark_standard"></span>
-                            </label>
-                            <label class="checkbox d-inline">Google AdWords
-                                <input type="checkbox">
-                                <span class="checkmark checkmark_standard"></span>
-                            </label>
-                        </div>
-                        <div class="checkboxes__line">
-                            <label class="checkbox checkbox_rounded d-inline">Яндекс.Директ
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark checkmark_rounded"></span>
-                            </label>
-                            <label class="checkbox checkbox_rounded d-inline">Google AdWords
-                                <input type="checkbox">
-                                <span class="checkmark checkmark_rounded"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="checkboxes__2 d-flex flex-xl-column flex-lg-column flex-nowrap flex-lg-wrap flex-md-wrap flex-sm-nowrap flex-nowrap">
-                        <div class="checkboxes__line">
-                            <label class="checkbox checkbox_white d-inline text_color_white"><span class="label__text">Согласен с условиями обработки персональных данных</span> 
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark checkmark_white checkmark_standard"></span>
-                            </label>
-                            <label class="checkbox checkbox_white d-inline text_color_white class="label__text><span class="label__text">Согласен с условиями обработки персональных данных</span> 
-                                <input type="checkbox">
-                                <span class="checkmark checkmark_white checkmark_standard"></span>
-                            </label>
-                        </div>
-                        <div class="checkboxes__line">
-                            <label class="checkbox checkbox_white checkbox_rounded d-inline text_color_white"><span class="label__text">Яндекс.Директ</span> 
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark checkmark_white checkmark_rounded-white checkmark_rounded"></span>
-                            </label>
-                            <label class="checkbox checkbox_rounded d-inline text_color_white"><span class="label__text">Яндекс.Директ</span>
-                                <input type="checkbox">
-                                <span class="checkmark checkmark_rounded-white checkmark_white checkmark_rounded"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-xl_1"></div>
-        <div class="col-xl-10">
+        <div class="row checkboxes checkboxes_standard">
 
-            <div class="navigaonusing">
-                <div class="gaonutosal">
-                    <div class="pesontedan text_color_primary">
-                        <input id="pesontedan-one" checked='checked' type="checkbox" name="pesontedans" />
-                        <label for="pesontedan-one"><h5 class="pesontedan__title text_weight_400 d-flex align-items-center"><span>Что такое контекстная реклама?</span></h5></label>
-                        <div class="pesontedan-content">
-                            <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
-                        </div>
+            <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+            <div class="col-lg-5">
+                <div class="checkboxes__1">
+                    <div class="checkboxes__line">
+                        <label class="checkbox d-inline">Яндекс.Директ
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark checkmark_standard"></span>
+                        </label>
+                        <label class="checkbox d-inline">Google AdWords
+                            <input type="checkbox">
+                            <span class="checkmark checkmark_standard"></span>
+                        </label>
                     </div>
-
-                    <div class="pesontedan pesontedan_hover text_color_primary">
-                        <input id="pesontedan-two" type="checkbox" name="pesontedans" />
-                        <label for="pesontedan-two"><h5 class="pesontedan__title text text_weight_400 d-flex align-items-center"><span>Как выглядит контекстная реклама?</span></h5></label>
-                        <div class="pesontedan-content">
-                            <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
-                        </div>
-                    </div>
-                    <div class="pesontedan text_color_primary">
-                        <input id="pesontedan-three" type="checkbox" name="pesontedans" />
-                        <label for="pesontedan-three"><h5 class="pesontedan__title text text_weight_400 d-flex align-items-center"><span>Где будут показываться мои объявления?</span></h5></label>
-                        <div class="pesontedan-content">
-                            <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
-                        </div>
-                    </div>
-                    <div class="pesontedan text_color_primary">
-                        <input id="pesontedan-four" type="checkbox" name="pesontedans" />
-                        <label for="pesontedan-four"><h5 class="pesontedan__title text_weight_400 text d-flex align-items-center"><span>Каким образом высчитывается цена входа в рекламные места, как списывается цена за клик?</span> </h5></label>
-                        <div class="pesontedan-content">
-                            <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
-                        </div>
+                    <div class="checkboxes__line">
+                        <label class="checkbox checkbox_rounded d-inline">Яндекс.Директ
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark checkmark_rounded"></span>
+                        </label>
+                        <label class="checkbox checkbox_rounded d-inline">Google AdWords
+                            <input type="checkbox">
+                            <span class="checkmark checkmark_rounded"></span>
+                        </label>
                     </div>
                 </div>
             </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-xl_1"></div>
-        <div class="col-xl-10">
-            <div class="slider slider-1 slider_standard">
-                <div class="slider__item slider__item_blue"></div>
-                <div class="slider__item slider__item_pink"></div>
-                <div class="slider__item slider__item_gradient"></div>
-                <div class="slider__item slider__item_gray"></div>
-            </div>
-        </div> 
-    </div>
-</div>
-<div class="container add-links">
-    <div class="row">
-        <div class="col-xl_1"></div>
-        <div class="col-xl-8">
-            <p class="add-links__text add-links__text_standard text text_color_primary">
-                Одним из самых эффективных способов расширения объявлений являются, конечно же. дополнительные ссылки. Данная функция позволяет добавлять до 10 ссылок на страницы вашего сайта. Хотите чтобы объявление стало более заметным и информативным? И в то же время оказало помощь потенциальному клиенту и сориентировало его на вашем сайте? Тогда добавление дополнительных ссылок — необходимый шаг для повышения эффективности вашей контекстной кампании. Но не стоит забывать и о фактической пользе для посетителя — если в объявлениях будут размещены ссылки на бесполезные для пользователя разделы сайта, то он просто тут же покинет ваш ресурс.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xl_1"></div>
-        <div class="col-xl-9">
-            <a href="#" class="link_decoration_none">
-                <img src="./img/add-links__img.png" alt="" class="add-links__img">
-                <p class="add-links__undertext text text_m text_color_primary under">
-                    10 шагов по проверке эффективности кампании контекстной рекламы
-                </p>
-            </a>
-        </div>
-    </div>
-</div>
-<div id="request" class="dark-form dark-form_standard">
-    <div class="container">
-        <form action="" class="form form_dark text-center text_color_white">
-            <div class="row">
-                <div class="form__title-wrapper m-auto">
-                    <h2 class="form__title form__title_dark text_uppercase">
-                        Остались вопросы?<br>Звоните специалистам!
-                    </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form__main-wrapper m-auto">
-                    <h2 class="form__number form__number_dark text_weight_300 border_red m-auto position-relative">+7 7273 <i class="text_weight_800">124 226</i></h2>
-                    <p class="form__undertext form__undertext_dark text">
-                        или оставьте заявку и <a href="#" class="form__undertext_red link_decoration_none">мы свяжемся с вами</a>
-                    </p>
-                    <div>
-                        <div class="form__item-wrapper" id="user">
-                            <input class="w-100 form__item form__item_exp" name="user" required placeholder="Иванов Сергей">
-                        </div>
-                        <div class="form__item-wrapper" id="tel">
-                            <input class="w-100 form__item form__item_exp" type="tel" pattern="^[ 0-9]+$" placeholder='+7 771 224 21 21' required>
-                        </div>
-                        <div class="form__item-wrapper" id="email">
-                            <input class="w-100 form__item form__item_exp" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
-                        </div>
-                        
-                    </div>
-                        
-                    <label class="checkbox form__checkbox form__checkbox_dark checkbox_white d-inline text_color_white">Согласен с условиями обработки персональных данных
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark checkmark_white checkmark_standard"></span>
-                    </label>
-                    <p class="undercheckbox-text text text_color_white">* — обязательные для заполнения поля</p>
-                    <input class="button form__button form__button_dark hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
-                </div>
-            </div>
-        </form>        
                 
+            <div class="col-lg-6 col p-lg-0">
+                <div class="checkboxes__2">
+                    <div class="checkboxes__line d-md-flex d-block">
+                        <label class="checkbox checkbox_white d-inline text_color_white"><span class="label__text">Согласен с условиями обработки персональных данных</span> 
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark checkmark_white checkmark_standard"></span>
+                        </label>
+                        <label class="checkbox checkbox_white d-inline text_color_white class="label__text><span class="label__text">Согласен с условиями обработки персональных данных</span> 
+                            <input type="checkbox">
+                            <span class="checkmark checkmark_white checkmark_standard"></span>
+                        </label>
+                    </div>
+                    <div class="checkboxes__line">
+                        <label class="checkbox checkbox_white checkbox_rounded d-inline text_color_white"><span class="label__text">Яндекс.Директ</span> 
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark checkmark_white checkmark_rounded-white checkmark_rounded"></span>
+                        </label>
+                        <label class="checkbox checkbox_rounded d-inline text_color_white"><span class="label__text">Google AdWords</span>
+                            <input type="checkbox">
+                            <span class="checkmark checkmark_rounded-white checkmark_white checkmark_rounded"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
     </div>
-</div>
-<div id="contacts" class="light-form">
     <div class="container">
-        <form action="" class="form text-center">
-            <div class="col-xl-8 m-auto bg_form bg_light bg_light-wrapper">
-                <div class="col-xl-1"></div>
-                <h2 class="form__title form__title_light text_uppercase text_color_primary">
-                        Давайте обсудим<br>ваш проект
-                </h2>
-                <h5 class="form__undertitle form__undertitle_light text_color_primary">продумаем и сделаем!</h5>
-                <div class="d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
-                    <div class="w-50 forms-wrapper">
-                        <div class="form__item-wrapper" id="user">
-                            <input class="w-100 form__item form__item_exp input_border text" name="user" required placeholder="Иванов Сергей">
+        <div class="row">
+            <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+            <div class="col-lg-10 col">
+
+                <div class="navigaonusing">
+                    <div class="gaonutosal">
+                        <div class="pesontedan text_color_primary">
+                            <input id="pesontedan-one" checked='checked' type="checkbox" name="pesontedans" />
+                            <label for="pesontedan-one"><h5 class="pesontedan__title text_weight_600 d-flex align-items-center"><span>Что такое контекстная реклама?</span></h5></label>
+                            <div class="pesontedan-content">
+                                <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
+                            </div>
                         </div>
-                        <div class="form__item-wrapper" id="tel">
+
+                        <div class="pesontedan pesontedan_hover text_color_primary">
+                            <input id="pesontedan-two" type="checkbox" name="pesontedans" />
+                            <label for="pesontedan-two"><h5 class="pesontedan__title text text_weight_600 d-flex align-items-center"><span>Как выглядит контекстная реклама?</span></h5></label>
+                            <div class="pesontedan-content">
+                                <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
+                            </div>
+                        </div>
+                        <div class="pesontedan text_color_primary">
+                            <input id="pesontedan-three" type="checkbox" name="pesontedans" />
+                            <label for="pesontedan-three"><h5 class="pesontedan__title text text_weight_600 d-flex align-items-center"><span>Где будут показываться мои объявления?</span></h5></label>
+                            <div class="pesontedan-content">
+                                <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
+                            </div>
+                        </div>
+                        <div class="pesontedan text_color_primary">
+                            <input id="pesontedan-four" type="checkbox" name="pesontedans" />
+                            <label for="pesontedan-four"><h5 class="pesontedan__title text_weight_600 text d-flex align-items-center"><span>Каким образом высчитывается цена входа в рекламные места, как списывается цена за клик?</span> </h5></label>
+                            <div class="pesontedan-content">
+                                <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+            <div class="col-xl-10">
+                <div class="slider slider-1 slider_standard">
+                    <div class="slider__item slider__item_blue"></div>
+                    <div class="slider__item slider__item_pink"></div>
+                    <div class="slider__item slider__item_gradient"></div>
+                    <div class="slider__item slider__item_gray"></div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="container add-links">
+        <div class="row">
+            <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+            <div class="col-xl-8">
+                <p class="add-links__text add-links__text_standard text text_color_primary">
+                    Одним из самых эффективных способов расширения объявлений являются, конечно же. дополнительные ссылки. Данная функция позволяет добавлять до 10 ссылок на страницы вашего сайта. Хотите чтобы объявление стало более заметным и информативным? И в то же время оказало помощь потенциальному клиенту и сориентировало его на вашем сайте? Тогда добавление дополнительных ссылок — необходимый шаг для повышения эффективности вашей контекстной кампании. Но не стоит забывать и о фактической пользе для посетителя — если в объявлениях будут размещены ссылки на бесполезные для пользователя разделы сайта, то он просто тут же покинет ваш ресурс.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+            <div class="col-xl-9">
+                <a href="#" class="link_decoration_none">
+                    <img src="./img/add-links__img.png" alt="" class="add-links__img">
+                    <p class="add-links__undertext text text_m text_color_primary under">
+                        10 шагов по проверке эффективности кампании контекстной рекламы
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="request" class="dark-form dark-form_standard">
+        <div class="container">
+            <form action="" class="form form_dark text-center text_color_white">
+                <div class="row">
+                    <div class="form__title-wrapper m-auto">
+                        <h2 class="form__title form__title_dark text_uppercase">
+                            Остались вопросы?<br>Звоните специалистам!
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form__main-wrapper m-auto">
+                        <h2 class="form__number form__number_dark text_weight_300 border_red m-auto position-relative">+7 7273 <i class="text_weight_800">124 226</i></h2>
+                        <p class="form__undertext form__undertext_dark text">
+                            или оставьте заявку и <a href="#" class="form__undertext_red link_decoration_none">мы свяжемся с вами</a>
+                        </p>
+                        <div>
+                            <div class="form__item-wrapper" id="user">
+                                <input class="w-100 form__item form__item_exp" name="user" required placeholder="Иванов Сергей">
+                            </div>
+                            <div class="form__item-wrapper" id="tel">
+                                <input class="w-100 form__item form__item_exp" type="tel" pattern="^[ 0-9]+$" placeholder='+7 771 224 21 21' required>
+                            </div>
+                            <div class="form__item-wrapper" id="email">
+                                <input class="w-100 form__item form__item_exp" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
+                            </div>
+                            
+                        </div>
+                            
+                        <label class="checkbox form__checkbox form__checkbox_dark checkbox_white d-inline text_color_white">Согласен с условиями обработки персональных данных
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark checkmark_white checkmark_standard"></span>
+                        </label>
+                        <p class="undercheckbox-text text text_color_white">* — обязательные для заполнения поля</p>
+                        <input class="button form__button form__button_dark hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
+                    </div>
+                </div>
+            </form>        
+                    
+        </div>
+    </div>
+    <div id="contacts" class="light-form">
+        <div class="container">
+            <form action="" class="form text-center">
+                <div class="col-xl-8 m-auto bg_form bg_light bg_light-wrapper">
+                    <div class="col-xl-1"></div>
+                    <h2 class="form__title form__title_light text_uppercase text_color_primary">
+                            Давайте обсудим<br>ваш проект
+                    </h2>
+                    <h5 class="form__undertitle form__undertitle_light text_color_primary">продумаем и сделаем!</h5>
+                    <div class="d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
+                        <div class="w-50 forms-wrapper">
+                            <div class="form__item-wrapper" id="user">
+                                <input class="w-100 form__item form__item_exp input_border text" name="user" required placeholder="Иванов Сергей">
+                            </div>
+                            <div class="form__item-wrapper" id="tel">
+                                <input class="w-100 form__item form__item_exp input_border text" type="tel" pattern="^[ 0-9]+$" placeholder='+7 771 224 21 21' required>
+                            </div>
+                            <div class="form__item-wrapper" id="email">
+                                <input class="w-100 form__item form__item_exp input_border text" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
+                            </div>
+                        </div>
+                        <textarea class="form__message form__item input_border text w-50" rows="4" cols='27' placeholder="Сообщение"></textarea>
+                    </div>
+                    <p class="form__prompt text-left">Поля отмеченные звездочкой ( <i class="form__undertext_red">*</i> ) , являются обязательными</p>
+                    <input class="button form__button form__button_light hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
+                </div>
+            </form>   
+            
+            <div class="dropdown-lists">
+                <div class="col-xl-8 bg_light bg_light-wrapper bg_light-wrapper bg-light_lists m-auto d-flex justify-content-between flex-xl-row flex-lg-row flex-md-row flex-column">
+                    <div class="d-inline-block dropdown">
+                        <select name="speed" class="select">
+                            <option disabled selected>Выпадающий список</option>
+                            <option>Элемент 1</option>
+                            <option>Элемент 2</option>
+                            <option>Элемент 3</option>
+                            <option>Элемент 4</option>
+                            <option>Элемент 5</option>
+                        </select>
+                    </div>
+                    <div class="d-inline-block dropdown" id="dropdown">
+                        <select name="speed" class="select">
+                            <option disabled selected>Выпадающий список</option>
+                            <option>Элемент 1</option>
+                            <option>Элемент 2</option>
+                            <option>Элемент 3</option>
+                            <option>Элемент 4</option>
+                            <option>Элемент 5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-elements">
+                <div class="col-xl-4 col-lg-6 col-md-8 m-auto">
+                    <div class="bg-light bg-light_elements">
+                        <div class="form__item-wrapper">
                             <input class="w-100 form__item form__item_exp input_border text" type="tel" pattern="^[ 0-9]+$" placeholder='+7 771 224 21 21' required>
                         </div>
-                        <div class="form__item-wrapper" id="email">
+                        <div class="form__item-wrapper">
                             <input class="w-100 form__item form__item_exp input_border text" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
                         </div>
                     </div>
-                    <textarea class="form__message form__item input_border text w-50" rows="4" cols='27' placeholder="Сообщение"></textarea>
-                </div>
-                <p class="form__prompt text-left">Поля отмеченные звездочкой ( <i class="form__undertext_red">*</i> ) , являются обязательными</p>
-                <input class="button form__button form__button_light hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
-            </div>
-        </form>   
-        
-        <div class="dropdown-lists">
-            <div class="col-xl-8 bg_light bg_light-wrapper bg_light-wrapper bg-light_lists m-auto d-flex justify-content-between flex-xl-row flex-lg-row flex-md-row flex-column">
-                <div class="d-inline-block dropdown">
-                    <select name="speed" class="select">
-                        <option disabled selected>Выпадающий список</option>
-                        <option>Элемент 1</option>
-                        <option>Элемент 2</option>
-                        <option>Элемент 3</option>
-                        <option>Элемент 4</option>
-                        <option>Элемент 5</option>
-                    </select>
-                </div>
-                <div class="d-inline-block dropdown" id="dropdown">
-                    <select name="speed" class="select">
-                        <option disabled selected>Выпадающий список</option>
-                        <option>Элемент 1</option>
-                        <option>Элемент 2</option>
-                        <option>Элемент 3</option>
-                        <option>Элемент 4</option>
-                        <option>Элемент 5</option>
-                    </select>
                 </div>
             </div>
-        </div>
 
 
-        <div class="form-elements">
-            <div class="col-xl-4 col-lg-6 col-md-8 m-auto">
-                <div class="bg-light bg-light_elements">
-                    <div class="form__item-wrapper">
-                        <input class="w-100 form__item form__item_exp input_border text" type="tel" pattern="^[ 0-9]+$" placeholder='+7 771 224 21 21' required>
-                    </div>
-                    <div class="form__item-wrapper">
-                        <input class="w-100 form__item form__item_exp input_border text" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
+            <div class="alert__block d-flex justify-content-center flex-xl-row flex-lg-row flex-md-row flex-column">
+                <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+                <div class="col-xl-5">
+                    <div class="alert__success alert__item text">
+                        <p class="alert__title text text_weight_700">Успешно выполненонное действие</p>
+                        С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки существенных финансовых условий.
                     </div>
                 </div>
-            </div>
-        </div>
-
-
-        <div class="alert__block d-flex justify-content-center flex-xl-row flex-lg-row flex-md-row flex-column">
-            <div class="col-xl_1"></div>
-            <div class="col-xl-5">
-                <div class="alert__success alert__item text">
-                    <p class="alert__title text text_weight_700">Успешно выполненонное действие</p>
-                    С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки существенных финансовых условий.
-                </div>
-            </div>
-            <div class="col-xl-5">
-                <div class="alert__error alert__item text">
-                    <p class="alert__title text text_weight_700">Сообщение об ошибке!</p>
-                    С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки существенных финансовых условий.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container mobile-tariff">
-    <div class="row page">
-        <div class="wrapper-select-block w-100">
-            <div class="select_block select_red select__rounded text_weight_600">
-                <div id="select__active" class="select__active select__rounded d-flex align-items-center text-left">Landing Page</div>
-                <div id="select__list" class="select__list">
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Landing Page</p>
-                    </div>
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Корпоративный</p>
-                    </div>
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Каталог</p>
-                    </div>
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Интернет-магазин</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper-select-block wrapper-select-block_bg w-100 position-relative">
-            <div class="select_block select_red select_red-white text_weight_600">
-
-                <div id="select__active" class="select__active d-flex align-items-center text-left">Подготовительный</div>
-
-                <div id="select__list" class="select__list">
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Подготовительный</p>
-                    </div>
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Корпоративный</p>
-                    </div>
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Каталог</p>
-                    </div>
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Интернет-магазин</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper-select-block w-100">
-            <div class="select_block select_red select_white-red text_weight_600">
-                <div id="select__active" class="select__active d-flex align-items-center text-left">Подготовительный</div>
-                <div id="select__list" class="select__list">
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Подготовительный</p>
-                    </div>
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Корпоративный</p>
-                    </div>
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Каталог</p>
-                    </div>
-                    <div class="select__item">
-                        <p class="select__tariff text text-left">Интернет-магазин</p>
+                <div class="col-xl-5">
+                    <div class="alert__error alert__item text">
+                        <p class="alert__title text text_weight_700">Сообщение об ошибке!</p>
+                        С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки существенных финансовых условий.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="plan-overflow mobile-tariff">
-    <div class="container plan-overflow plan-overflow-1">
-        <div class="row page">
-            <div class="wrapper-select-block w-100 d-flex">
-                <div class="select_block select_red select_all-red text_weight_600">
-                    <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
-                    <div id="select__list" class="select__list">
-                        <div class="select__item">
-                            <p class="select__tariff text text-left">Базовый</p>
-                        </div>
-                        <div class="select__item">
-                            <p class="select__tariff text text-left">Корпоративный</p>
-                        </div>
-                        <div class="select__item">
-                            <p class="select__tariff text text-left">Каталог</p>
-                        </div>
-                        <div class="select__item">
-                            <p class="select__tariff text text-left">Интернет-магазин</p>
+
+    <div class="overflow-hidden">
+        <div class="container mobile-tariff">
+            <div class="row">
+                <div class="wrapper-select-block w-100">
+                    <div class="select_block select_red select__rounded text_weight_600">
+                        <div id="select__active" class="select__active select__rounded d-flex align-items-center text-left">Landing Page</div>
+                        <div id="select__list" class="select__list">
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Landing Page</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Корпоративный</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Каталог</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Интернет-магазин</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="plan plan-tariff plan_red border-0 p-0">
-                    <div class="plan-tariff-2 d-flex">
-                        <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
-                        <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
-                        <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
-                        <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
+                <div class="wrapper-select-block wrapper-select-block_bg w-100 position-relative">
+                    <div class="select_block select_red select_red-white text_weight_600">
+
+                        <div id="select__active" class="select__active d-flex align-items-center text-left">Подготовительный</div>
+
+                        <div id="select__list" class="select__list">
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Подготовительный</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Корпоративный</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Каталог</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Интернет-магазин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-select-block w-100">
+                    <div class="select_block select_red select_white-red text_weight_600">
+                        <div id="select__active" class="select__active d-flex align-items-center text-left">Подготовительный</div>
+                        <div id="select__list" class="select__list">
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Подготовительный</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Корпоративный</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Каталог</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Интернет-магазин</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="plan-overflow colors__item_pinkToPurple mobile-tariff">
-    <div class="container plan-overflow plan-overflow-2">
-        <div class="row page">
-            <div class="wrapper-select-block w-100 d-flex">
-                <div class="select_block select_red select_all-red text_weight_600">
-                    <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
-                    <div id="select__list" class="select__list">
-                        <div class="select__item">
-                            <p class="select__tariff text text-left">Базовый</p>
+    <div class="plan-overflow mobile-tariff">
+        <div class="container plan-overflow plan-overflow-1">
+            <div class="row">
+                <div class="wrapper-select-block w-100 d-flex">
+                    <div class="select_block select_red select_all-red text_weight_600">
+                        <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
+                        <div id="select__list" class="select__list">
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Базовый</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Корпоративный</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Каталог</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Интернет-магазин</p>
+                            </div>
                         </div>
-                        <div class="select__item">
-                            <p class="select__tariff text text-left">Корпоративный</p>
-                        </div>
-                        <div class="select__item">
-                            <p class="select__tariff text text-left">Каталог</p>
-                        </div>
-                        <div class="select__item">
-                            <p class="select__tariff text text-left">Интернет-магазин</p>
+                    </div>
+                    <div class="plan plan-tariff plan_red border-0 p-0">
+                        <div class="plan-tariff-2 d-flex">
+                            <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
+                            <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
+                            <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
+                            <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
                         </div>
                     </div>
                 </div>
-                <div class="plan plan-tariff plan_white d-flex border-0 p-0">
-                    <div class="plan-tariff-2 d-flex">
-                        <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
-                        <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
-                        <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
-                        <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
+            </div>
+        </div>
+    </div>
+    <div class="plan-overflow colors__item_pinkToPurple mobile-tariff">
+        <div class="container plan-overflow plan-overflow-2">
+            <div class="row">
+                <div class="wrapper-select-block w-100 d-flex">
+                    <div class="select_block select_red select_all-red text_weight_600">
+                        <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
+                        <div id="select__list" class="select__list">
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Базовый</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Корпоративный</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Каталог</p>
+                            </div>
+                            <div class="select__item">
+                                <p class="select__tariff text text-left">Интернет-магазин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan plan-tariff plan_white d-flex border-0 p-0">
+                        <div class="plan-tariff-2 d-flex">
+                            <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
+                            <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
+                            <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
+                            <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container plans">
+    <div class="container plans">
 
-    <div class="row plan-wrapper">
-        <div class="plan plan_red plan_rounded d-flex text_weight_600">
-            <div class="plan__item plan__item_active text button_rounded text-center hover">Landing Page</div>
-            <div class="plan__item text button_rounded text-center hover">Корпоративный</div>
-            <div class="plan__item text button_rounded text-center hover">Каталог</div>
-            <div class="plan__item text button_rounded text-center hover">Интернет-магазин</div>
-        </div>
-    </div>
-
-    <div class="row plan-wrapper colors__item_pinkToPurple text_weight_600">
-        <div class="plan plan_white plan_rounded d-flex">
-            <div class="plan__item plan__item_active text button_rounded text-center hover">Landing Page</div>
-            <div class="plan__item text button_rounded text-center hover">Корпоративный</div>
-            <div class="plan__item text button_rounded text-center hover">Каталог</div>
-            <div class="plan__item text button_rounded text-center hover">Интернет-магазин</div>
-        </div>
-    </div>
-
-    <div class="row plan-tarrif-wrapper">
-        <div class="plan plan-tariff plan_red d-flex justify-content-between border-0 p-0 flex-lg-wrap flex-wrap">
-            <div class="plan-tariff-1 d-flex">
-                <div class="plan__item plan__item_active text text-center text_uppercase hover text_m">Базовый</div>
-                <div class="plan__item text text-center hover text_uppercase text_m">Стандарт</div>
-                <div class="plan__item text text-center hover text_uppercase text_m">премиум</div>
-            </div>
-            <div class="plan-tariff-2 d-flex">
-                <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
-                <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
-                <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
-                <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
+        <div class="row plan-wrapper">
+            <div class="plan plan_red plan_rounded d-flex text_weight_600">
+                <div class="plan__item plan__item_active text button_rounded text-center hover">Landing Page</div>
+                <div class="plan__item text button_rounded text-center hover">Корпоративный</div>
+                <div class="plan__item text button_rounded text-center hover">Каталог</div>
+                <div class="plan__item text button_rounded text-center hover">Интернет-магазин</div>
             </div>
         </div>
-    </div>
 
-    <div class="row plan-tarrif-wrapper colors__item_pinkToPurple">
-        <div class="plan plan-tariff plan_white d-flex justify-content-between border-0 p-0 flex-lg-wrap flex-wrap">
-            <div class="plan-tariff-1 d-flex">
-                <div class="plan__item plan__item_active text text-center text_uppercase hover text_m">Базовый</div>
-                <div class="plan__item text text-center hover text_uppercase text_m">Стандарт</div>
-                <div class="plan__item text text-center hover text_uppercase text_m">премиум</div>
-            </div>
-            <div class="plan-tariff-2 d-flex">
-                <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
-                <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
-                <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
-                <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
+        <div class="row plan-wrapper colors__item_pinkToPurple text_weight_600">
+            <div class="plan plan_white plan_rounded d-flex">
+                <div class="plan__item plan__item_active text button_rounded text-center hover">Landing Page</div>
+                <div class="plan__item text button_rounded text-center hover">Корпоративный</div>
+                <div class="plan__item text button_rounded text-center hover">Каталог</div>
+                <div class="plan__item text button_rounded text-center hover">Интернет-магазин</div>
             </div>
         </div>
-    </div>
-        
-</div>
 
-
-
-<div class="container ctrs">
-    <div class="row">
-        <div class="col-xl-10 p-0 m-auto d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
-            <div class="ctr-wrapper ctr_1 w-50 colors__item_pinkToPurple">
-                <div class="ctr m-auto">
-                    <p class="ctr__title text text_color_white text-center">Средний показатель качества<br> рекламных объявлений<br>(CTR) - 22,24% <i class="question text_weight_600 text_color_primary d-inline-block rounded-circle bg_white">?</i></p>
-                    <div class="ctr__text text m-auto bg_white">CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика пользователей по ним</div>
+        <div class="row plan-tarrif-wrapper">
+            <div class="plan plan-tariff plan_red d-flex justify-content-between border-0 p-0 flex-lg-wrap flex-wrap">
+                <div class="plan-tariff-1 d-flex">
+                    <div class="plan__item plan__item_active text text-center text_uppercase hover text_m">Базовый</div>
+                    <div class="plan__item text text-center hover text_uppercase text_m">Стандарт</div>
+                    <div class="plan__item text text-center hover text_uppercase text_m">премиум</div>
                 </div>
-            </div>
-
-            <div class="ctr-wrapper ctr_2 w-50">
-                <div class="ctr ctr_red m-auto">
-                    <p class="ctr__title text text-center">Средний показатель качества<br> рекламных объявлений<br>(CTR) - 22,24% <i class="question text_weight_600 text_color_primary d-inline-block rounded-circle border_red">?</i></p>
-                    <div class="ctr__text text m-auto bg_white">CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика пользователей по ним</div>
+                <div class="plan-tariff-2 d-flex">
+                    <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
+                    <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
+                    <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
+                    <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
                 </div>
             </div>
         </div>
+
+        <div class="row plan-tarrif-wrapper colors__item_pinkToPurple">
+            <div class="plan plan-tariff plan_white d-flex justify-content-between border-0 p-0 flex-lg-wrap flex-wrap">
+                <div class="plan-tariff-1 d-flex">
+                    <div class="plan__item plan__item_active text text-center text_uppercase hover text_m">Базовый</div>
+                    <div class="plan__item text text-center hover text_uppercase text_m">Стандарт</div>
+                    <div class="plan__item text text-center hover text_uppercase text_m">премиум</div>
+                </div>
+                <div class="plan-tariff-2 d-flex">
+                    <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
+                    <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
+                    <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
+                    <div class="plan__item text text-center hover text_uppercase text_xs">до 600</div>
+                </div>
+            </div>
+        </div>
+            
     </div>
-</div>
-<div class="table-1">
-    <div id="showreel" class="container">
-        <div class="table-wrapper-1 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-start justify-content-start">
-            <div>
-                <h6 class="table__title m-auto">Заголовок таблицы</h6>
-                <table class="table table_red text table-bordered m-auto">
-                    <thead class="thead thead_red text_color_white text_weight_600">
+
+
+
+    <div class="container ctrs">
+        <div class="row">
+            <div class="col-xl-10 p-0 m-auto d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
+                <div class="ctr-wrapper ctr_1 w-50 colors__item_pinkToPurple">
+                    <div class="ctr m-auto">
+                        <p class="ctr__title text text_color_white text-center">Средний показатель качества<br> рекламных объявлений<br>(CTR) - 22,24% <i class="question text_weight_600 text_color_primary d-inline-block rounded-circle bg_white">?</i></p>
+                        <div class="ctr__text text m-auto bg_white">CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика пользователей по ним</div>
+                    </div>
+                </div>
+
+                <div class="ctr-wrapper ctr_2 w-50">
+                    <div class="ctr ctr_red m-auto">
+                        <p class="ctr__title text text-center">Средний показатель качества<br> рекламных объявлений<br>(CTR) - 22,24% <i class="question text_weight_600 text_color_primary d-inline-block rounded-circle border_red">?</i></p>
+                        <div class="ctr__text text m-auto bg_white">CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика пользователей по ним</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-1">
+        <div id="showreel" class="container">
+            <div class="table-wrapper-1 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-start justify-content-start">
+                <div>
+                    <h6 class="table__title m-auto">Заголовок таблицы</h6>
+                    <table class="table table_red text table-bordered m-auto">
+                        <thead class="thead thead_red text_color_white text_weight_600">
+                            <tr>
+                                <td class="table__col" scope="col">Продукты</td>
+                                <td class="table__col" scope="col">Стоимость</td>
+                                <td class="table__col" scope="col">Продолжительность</td>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody tbody_red">
+                            <tr>
+                                <td>Прототипы</td>
+                                <td>от 50 000 тг</td>
+                                <td>1 месяц</td>
+                            </tr>
+                            <tr>
+                                <td>Адаптивные и композитные</td>
+                                <td>от 500 000 тг</td>
+                                <td>6 месяцев</td>
+                            </tr>
+                            <tr>
+                                <td>Landing page</td>
+                                <td>от 200 000 тг</td>
+                                <td>3 месяца</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-wrapper-2">
+        <div class="container d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-start justify-content-start table-wrapper_2">
+            <div class="table-wrapper_margin">
+                <h6 class="table__title text_color_white m-auto">Заголовок таблицы</h6>
+                <table class="table table_white text table-bordered m-auto">
+                    <thead class="thead thead_white text_color_pink text_weight_600 bg_white">
                         <tr>
                             <td class="table__col" scope="col">Продукты</td>
                             <td class="table__col" scope="col">Стоимость</td>
                             <td class="table__col" scope="col">Продолжительность</td>
                         </tr>
                     </thead>
-                    <tbody class="tbody tbody_red">
+                    <tbody class="tbody tbody_white text_color_white">
                         <tr>
                             <td>Прототипы</td>
                             <td>от 50 000 тг</td>
@@ -834,94 +874,62 @@
             </div>
         </div>
     </div>
-</div>
-<div class="table-wrapper-2">
-    <div class="container d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-start justify-content-start table-wrapper_2">
-        <div class="table-wrapper_margin">
-            <h6 class="table__title text_color_white m-auto">Заголовок таблицы</h6>
-            <table class="table table_white text table-bordered m-auto">
-                <thead class="thead thead_white text_color_pink text_weight_600 bg_white">
-                    <tr>
-                        <td class="table__col" scope="col">Продукты</td>
-                        <td class="table__col" scope="col">Стоимость</td>
-                        <td class="table__col" scope="col">Продолжительность</td>
-                    </tr>
-                </thead>
-                <tbody class="tbody tbody_white text_color_white">
-                    <tr>
-                        <td>Прототипы</td>
-                        <td>от 50 000 тг</td>
-                        <td>1 месяц</td>
-                    </tr>
-                    <tr>
-                        <td>Адаптивные и композитные</td>
-                        <td>от 500 000 тг</td>
-                        <td>6 месяцев</td>
-                    </tr>
-                    <tr>
-                        <td>Landing page</td>
-                        <td>от 200 000 тг</td>
-                        <td>3 месяца</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
 
 
-<div class="container">
-    <div class="pagination pagination-wrapper d-flex justify-content-center align-items-center text-center">
-        <i class="fas fa-chevron-left paginations__arrows d-flex justify-content-center align-items-center rounded-circle hover"></i>
-        <div class="pagination pagination_wrapper d-flex">
-            <a href="" class="pagination__page pagination__page_active rounded-circle link_decoration_none">
-                <i class="text_weight_400 pagination__number">1</i></a>
-            </a>
-            <a href="" class="pagination__page rounded-circle link_decoration_none">
-                <i class="text_weight_400 pagination__number">2</i>
-            </a>
-            <a href="" class="pagination__page rounded-circle link_decoration_none">
-                <i class="text_weight_400 pagination__number">3</i>
-            </a>
-            <a href="" class="pagination__page rounded-circle link_decoration_none">
-                <i class="text_weight_400 pagination__number">4</i></a>
-            <a href="" class="pagination__page rounded-circle link_decoration_none">
-                <i class="text_weight_400 pagination__number pagination__dots">...</i>
-            </a>
-            <a href="" class="pagination__page rounded-circle link_decoration_none">
-                <i class="text_weight_400 pagination__number">10</i>
-            </a>
-        </div>
-        <i class="fas fa-chevron-right paginations__arrows d-flex justify-content-center align-items-center rounded-circle hover"></i>
-    </div>
-</div>
-<div class="container">
-    <div class="instagram d-flex align-items-center flex-column">
-        <a href="https://www.instagram.com"><img src="./img/instagram__title.png" alt="" class="instagram__title"></a>
-        <div class="instagram__content d-flex position-relative">
-            <a href=""><img src="./img/nsta1.png" alt="" class="instagram__item"></a>
-            <a href=""><img src="./img/nsta2.png" alt="" class="instagram__item"></a>
-            <a href=""><img src="./img/nsta3.png" alt="" class="instagram__item"></a>
-            <a href=""><img src="./img/nsta4.png" alt="" class="instagram__item"></a>
-            <a href=""><img src="./img/nsta5.png" alt="" class="instagram__item"></a>
-            <a href="https://www.instagram.com/hoster.kz/?hl=en" class="instagram__iphone position-absolute"><img src="./img/IPhoneX.png" alt=""></a>
+    <div class="container">
+        <div class="pagination pagination-wrapper d-flex justify-content-center align-items-center text-center">
+            <i class="fas fa-chevron-left paginations__arrows d-flex justify-content-center align-items-center rounded-circle hover"></i>
+            <div class="pagination pagination_wrapper d-flex">
+                <a href="" class="pagination__page pagination__page_active rounded-circle link_decoration_none">
+                    <i class="text_weight_400 pagination__number">1</i></a>
+                </a>
+                <a href="" class="pagination__page rounded-circle link_decoration_none">
+                    <i class="text_weight_400 pagination__number">2</i>
+                </a>
+                <a href="" class="pagination__page rounded-circle link_decoration_none">
+                    <i class="text_weight_400 pagination__number">3</i>
+                </a>
+                <a href="" class="pagination__page rounded-circle link_decoration_none">
+                    <i class="text_weight_400 pagination__number">4</i></a>
+                <a href="" class="pagination__page rounded-circle link_decoration_none">
+                    <i class="text_weight_400 pagination__number pagination__dots">...</i>
+                </a>
+                <a href="" class="pagination__page rounded-circle link_decoration_none">
+                    <i class="text_weight_400 pagination__number">10</i>
+                </a>
+            </div>
+            <i class="fas fa-chevron-right paginations__arrows d-flex justify-content-center align-items-center rounded-circle hover"></i>
         </div>
     </div>
-</div>
-<footer class="footer bg_gray">
-    <div class="container d-flex justify-content-between align-items-center  flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column">
-        <p class="footer__rights text text_m text_color_white order-xl-1 order-lg-1 order-md-1 order-sm-2 order-2">©2018 ТОО Компания «Siter.KZ» <br>Все права защищены</p>
-        <div class="socials d-flex align-items-center order-xl-2 order-lg-2 order-md-2 order-sm-1 order-1">
-            <p class="socials__text socials__text_footer text text_color_white">Мы в социальных сетях</p>
-            <div class="socials__items d-flex">
-                <a href="#" class="socials__item"><img src="./img/socials__item_inst.png" alt=""></a>
-                <a href="#" class="socials__item"><img src="./img/socials__item_facebook.png" alt=""></a>
-                <a href="#" class="socials__item"><img src="./img/socials__item_vk.png" alt=""></a>
+    <div class="overflow-hidden">
+        <div class="container">
+            <div class="instagram d-flex align-items-center flex-column">
+                <a href="https://www.instagram.com"><img src="./img/instagram__title.png" alt="" class="instagram__title"></a>
+                <div class="instagram__content d-flex position-relative">
+                    <a href=""><img src="./img/nsta1.png" alt="" class="instagram__item"></a>
+                    <a href=""><img src="./img/nsta2.png" alt="" class="instagram__item"></a>
+                    <a href=""><img src="./img/nsta3.png" alt="" class="instagram__item"></a>
+                    <a href=""><img src="./img/nsta4.png" alt="" class="instagram__item"></a>
+                    <a href=""><img src="./img/nsta5.png" alt="" class="instagram__item"></a>
+                    <a href="https://www.instagram.com/hoster.kz/?hl=en" class="instagram__iphone position-absolute"><img src="./img/IPhoneX.png" alt=""></a>
+                </div>
             </div>
         </div>
     </div>
-</footer>
-
+    <footer class="footer bg_gray">
+        <div class="container d-flex justify-content-between align-items-center  flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column">
+            <p class="footer__rights text text_m text_color_white order-xl-1 order-lg-1 order-md-1 order-sm-2 order-2">©2018 ТОО Компания «Siter.KZ» <br>Все права защищены</p>
+            <div class="socials d-flex align-items-center order-xl-2 order-lg-2 order-md-2 order-sm-1 order-1">
+                <p class="socials__text socials__text_footer text text_color_white">Мы в социальных сетях</p>
+                <div class="socials__items d-flex">
+                    <a href="#" class="socials__item"><img src="./img/socials__item_inst.png" alt=""></a>
+                    <a href="#" class="socials__item"><img src="./img/socials__item_facebook.png" alt=""></a>
+                    <a href="#" class="socials__item"><img src="./img/socials__item_vk.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
