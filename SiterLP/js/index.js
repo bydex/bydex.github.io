@@ -45,12 +45,10 @@ $(document).ready(function(){
     });
 
     // choose plan on click
-    $(document).ready(function(){
         $(".plan__item").click(function(){
             $(this).parent().children().removeClass("plan__item_active");
             $(this).addClass("plan__item_active");
         });
-    });
 
 
     $( function() {
@@ -60,10 +58,8 @@ $(document).ready(function(){
 
 
     // menu
-    $(document).ready(function(){
-        $(".hamburger").click(function(){
-            $('.left-menu').toggleClass('d-block');
-        });
+    $(".hamburger").click(function(){
+        $('.left-menu').toggleClass('d-block');
     });
 
 
@@ -79,9 +75,12 @@ $(document).ready(function(){
     });
     function menu() {
         if ($(window).width() <= 1500) {
-            $('.logo_left-menu').click(function(){
-                $('.left-menu').removeClass('d-block');
-            })
+            $(document).mouseup(function (e) {
+                var container = $(".left-menu");
+                if (container.has(e.target).length === 0){
+                    container.removeClass('d-block');
+                }
+            });
         }
     }
 
@@ -92,6 +91,14 @@ $(document).ready(function(){
         $title = $(this).parent().find($('.pesontedan__title'));
 
         ($(this).prop("checked")) ? $title.removeClass('text') :  $title.addClass('text');
+    })
+
+
+    $('.form__item').focus(function(){
+        $parent = $(this).parent();
+        $('.form__item-wrapper').removeClass('form__item_focus');
+        $parent.addClass('form__item_focus');
+    
     })
 });
 

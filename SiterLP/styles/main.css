@@ -290,6 +290,9 @@ h5 {
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-auto {
+  overflow-y: auto;
+}
 
 .ul__item {
   position: relative;
@@ -434,7 +437,7 @@ h5 {
 /* LEFT_MENU */
 .left-menu {
   width: 230px;
-  min-height: 100%;
+  height: 100vh;
   background-color: #48444b;
   padding-top: 54px;
 }
@@ -445,7 +448,7 @@ h5 {
   left: 0;
 }
 .logo_left-menu {
-  padding: 14px 0 74px 28px;
+  padding: 14px 0 74px 13px;
 }
 
 .item {
@@ -453,7 +456,7 @@ h5 {
 }
 
 .item_nav {
-  padding: 0 36px 0 26px;
+  padding: 0 36px 0 21px;
   height: 57px;
 }
 
@@ -1038,7 +1041,7 @@ main {
       -ms-transform: translate(0, -50%);
        -o-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  color: #21212155;
+    color: rgba(33, 33, 33, 0.25);
 }
 
 .form__item:focus::after {
@@ -1061,6 +1064,10 @@ main {
   border: 1px solid #212121;
   line-height: 40px;
   padding-left: 14px;
+  padding-right: 40px;
+}
+.form__item_focus::after {
+  color: rgba(33, 33, 33, 0.55) !important;
 }
 
 .form__item:focus {
@@ -2097,13 +2104,40 @@ a.pagination__page:not(:last-child) {
   }
 
 
+
+  .dark-form {
+    padding-top: 65px;
+  }
+  .forms-wrapper {
+    margin-top: 43px !important;
+  }
+  .form__title_dark {
+    padding-bottom: 27px;
+  }
   .form__number {
-    
+    line-height: 63px;
+    padding: 0;
+    font-size: 32px;
+==
   }
-
   .form__undertext {
-
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 29px;
+    margin: 29px 20px 0 20px;
   }
+  .form__checkbox {
+    margin-right: 10px;
+    font-size: 15px;
+    margin-top: 33px;
+    margin-bottom: 22px;
+  }
+  .undercheckbox-text {
+    font-size: 14px; 
+    padding-left: 0;
+    margin-bottom: 41px;
+  }
+
 
   .dropwdown-lists .bg_light.bg_light-lists {
     padding-bottom: 213px !important;
