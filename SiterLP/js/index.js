@@ -59,7 +59,7 @@ $(document).ready(function(){
 
     // menu
     $(".hamburger").click(function(){
-        $('.left-menu').toggleClass('d-block');
+        $('.left-menu').addClass('left-menu_active');
     });
 
 
@@ -78,7 +78,7 @@ $(document).ready(function(){
             $(document).mouseup(function (e) {
                 var container = $(".left-menu");
                 if (container.has(e.target).length === 0){
-                    container.removeClass('d-block');
+                    container.removeClass('left-menu_active');
                 }
             });
         }

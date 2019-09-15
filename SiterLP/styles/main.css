@@ -438,7 +438,7 @@ h5 {
 .left-menu {
   width: 230px;
   height: 100vh;
-  background-color: #48444b;
+  background-color: #343037;
   padding-top: 54px;
 }
 .left-menu_standard {
@@ -476,7 +476,7 @@ main {
 }
 /* HEADER */
 .bg_gray {
-  background-color: #48444b;
+  background-color: #343037;
 }
 
 .header_style {
@@ -1693,6 +1693,7 @@ a.pagination__page:not(:last-child) {
 
 .footer {
   padding: 25.5px 0 40.5px 0;
+  background-color: #343037;
 }
 
 .socials__text {
@@ -1723,7 +1724,10 @@ a.pagination__page:not(:last-child) {
     padding-left: 0;
   }
   .left-menu {
-    display: none;
+    left: -100%;
+  }
+  .left-menu_active {
+    left: 0;
   }
   .icon-hamburger {
     display: block;
