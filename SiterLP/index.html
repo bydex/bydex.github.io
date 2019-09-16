@@ -526,28 +526,35 @@
     <div id="contacts" class="light-form">
         <div class="container">
             <form action="" class="form text-center">
-                <div class="col-xl-8 m-auto bg_form bg_light bg_light-wrapper">
-                    <div class="col-xl-1"></div>
-                    <h2 class="form__title form__title_light text_uppercase text_color_primary">
+
+                <div class="col-xl-8 col-lg-10 m-auto bg_form bg_light bg_light-wrapper">
+                    <div class="col-xl-10 m-auto">
+                        <h2 class="form__title form__title_light text_uppercase text_color_primary">
                             Давайте обсудим<br>ваш проект
-                    </h2>
-                    <h5 class="form__undertitle form__undertitle_light text_color_primary">продумаем и сделаем!</h5>
-                    <div class="d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
-                        <div class="w-50 forms-wrapper">
-                            <div class="form__item-wrapper" id="user">
-                                <input class="w-100 form__item form__item_exp input_border text" name="user" required placeholder="Иванов Сергей">
-                            </div>
-                            <div class="form__item-wrapper" id="tel">
-                                <input class="w-100 form__item form__item_exp input_border text" type="tel" pattern="^[ 0-9]+$" placeholder='+7 771 224 21 21' required>
-                            </div>
-                            <div class="form__item-wrapper" id="email">
-                                <input class="w-100 form__item form__item_exp input_border text" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
-                            </div>
-                        </div>
-                        <textarea class="form__message form__item input_border text w-50" rows="4" cols='27' placeholder="Сообщение"></textarea>
+                        </h2>
+                        <h5 class="form__undertitle form__undertitle_light text_color_primary">продумаем и сделаем!</h5>
                     </div>
-                    <p class="form__prompt text-left">Поля отмеченные звездочкой ( <i class="form__undertext_red">*</i> ) , являются обязательными</p>
-                    <input class="button form__button form__button_light hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
+                        
+                    <div class="col-xl-10 col-lg-10 col-md-9 col m-auto">
+                        <div class="d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
+                            <div class="w-50 forms-wrapper-1 forms-mobile">
+                                <div class="form__item-wrapper" id="user">
+                                    <input class="w-100 form__item form__item_exp input_border text" name="user" required placeholder="Иванов Сергей">
+                                </div>
+                                <div class="form__item-wrapper" id="tel">
+                                    <input class="w-100 form__item form__item_exp input_border text" type="tel" pattern="^[ 0-9]+$" placeholder='+7 771 224 21 21' required>
+                                </div>
+                                <div class="form__item-wrapper" id="email">
+                                    <input class="w-100 form__item form__item_exp input_border text" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
+                                </div>
+                            </div>
+                            <textarea class="form__message form__item input_border text w-50 forms-mobile" rows="4" cols='27' placeholder="Сообщение"></textarea>
+                        </div>
+                        <p class="form__prompt text-left forms-mobile">Поля отмеченные звездочкой ( <i class="form__undertext_red">*</i> ) , являются обязательными</p>
+                        <p class="undercheckbox-text text forms-mobile">* — обязательные для заполнения поля</p>
+                        <input class="button form__button form__button_light forms-mobile hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
+                    </div> 
+                        
                 </div>
             </form>   
             
@@ -900,7 +907,7 @@
                 </a>
                 <a href="" class="pagination__page rounded-circle link_decoration_none">
                     <i class="text_weight_400 pagination__number">4</i></a>
-                <a href="" class="pagination__page rounded-circle link_decoration_none">
+                <a class="pagination__page rounded-circle link_decoration_none">
                     <i class="text_weight_400 pagination__number pagination__dots">...</i>
                 </a>
                 <a href="" class="pagination__page rounded-circle link_decoration_none">

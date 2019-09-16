@@ -31,8 +31,7 @@ $(document).ready(function(){
 
 
     // add cloned buttons for slider
-    $(".slick-prev").clone().appendTo( ".slider-1" );
-    $(".slick-next").clone().appendTo( ".slider-1" );
+    $(".slick-arrow").clone().appendTo( ".slider-1" );
 
     $(".slick-prev:last").addClass("slick-prev_clonned slick-arrow_cloned");
     $(".slick-next:last").addClass("slick-next_clonned slick-arrow_cloned");
@@ -66,22 +65,23 @@ $(document).ready(function(){
 
 
 
+    function clickOut(cont, contClass, parent = cont) {
+        $(document).mouseup(function (e) {
+            var container = cont;
+            if (container.has(e.target).length === 0){
+                parent.removeClass(contClass);
+            }
+        });
+    }
 
-    $(document).ready(function() {
-        menu();
-    });
+
+
+    menu();
     $(window).resize(function() {
         menu();
     });
     function menu() {
-        if ($(window).width() <= 1500) {
-            $(document).mouseup(function (e) {
-                var container = $(".left-menu");
-                if (container.has(e.target).length === 0){
-                    container.removeClass('left-menu_active');
-                }
-            });
-        }
+        clickOut($('.left-menu'), 'left-menu_active');
     }
 
 
@@ -98,7 +98,6 @@ $(document).ready(function(){
         $parent = $(this).parent();
         $('.form__item-wrapper').removeClass('form__item_focus');
         $parent.addClass('form__item_focus');
-    
     })
 });
 
