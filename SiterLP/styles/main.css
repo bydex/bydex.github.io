@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?49r0nb');
-  src:  url('../fonts/icomoon.eot?49r0nb#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?49r0nb') format('truetype'),
-    url('../fonts/icomoon.woff?49r0nb') format('woff'),
-    url('../fonts/icomoon.svg?49r0nb#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?z0j1ev');
+  src:  url('../fonts/icomoon.eot?z0j1ev#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?z0j1ev') format('truetype'),
+    url('../fonts/icomoon.woff?z0j1ev') format('woff'),
+    url('../fonts/icomoon.svg?z0j1ev#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-smartphone-iphone:before {
+  content: "\e90a";
+}
+.icon-clip:before {
+  content: "\e909";
+}
 .icon-hamburger:before {
   content: "\e908";
   color: #fff;
@@ -1199,7 +1205,36 @@ main {
 .bg-light_elements {
   padding: 90px 50px;
 }
-
+.input-file [type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+ 
+.input-file [type="file"] + label {
+  color: #343037;;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  margin-bottom: 27px;
+}
+  
+.input-file [type="file"]:focus + label {
+  outline: 1px dotted #000;
+}
+.input-file .icon-clip {
+  font-size: 20px;
+  margin-right: 14px;
+}
+.input-file .icon-clip:before {
+  position: relative;
+  top: 2px;
+}
 
 /* SELECTS */
 .dropdown span {
@@ -1220,7 +1255,8 @@ main {
   width: 100%;
 }
 .dropdown {
-  width: 45%;
+  width: 48%;
+  max-width: 280px;
 }
 #ui-id-1-button, #ui-id-2-button {
   color: #999999;

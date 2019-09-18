@@ -99,6 +99,15 @@ $(document).ready(function(){
         $('.form__item-wrapper').removeClass('form__item_focus');
         $parent.addClass('form__item_focus');
     })
+
+
+
+        $('#falseinput').click(function(){
+          $("#fileinput").click();
+        });
+    $('#fileinput').change(function() {
+        $('#selected_filename').text($('#fileinput]')[0].files[0].name);
+      });
 });
 
 

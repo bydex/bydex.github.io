@@ -536,7 +536,7 @@
                     </div>
                         
                     <div class="col-xl-10 col-lg-10 col-md-9 col m-auto">
-                        <div class="d-flex flex-xl-row flex-lg-row flex-md-row flex-column">
+                        <div class="d-flex flex-md-row flex-column">
                             <div class="w-50 forms-wrapper-1 forms-mobile">
                                 <div class="form__item-wrapper" id="user">
                                     <input class="w-100 form__item form__item_exp input_border text" name="user" required placeholder="Иванов Сергей">
@@ -552,6 +552,11 @@
                         </div>
                         <p class="form__prompt text-left forms-mobile">Поля отмеченные звездочкой ( <i class="form__undertext_red">*</i> ) , являются обязательными</p>
                         <p class="undercheckbox-text text forms-mobile">* — обязательные для заполнения поля</p>
+                        <div class="input-file text-left forms-mobile d-block d-md-none">
+                            <input type="file" id="file" />
+                            <label for="file" /><span class="icon-clip"></span>Прикрепить файл</label>
+                        </div>
+                            
                         <input class="button form__button form__button_light forms-mobile hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
                     </div> 
                         
@@ -559,26 +564,28 @@
             </form>   
             
             <div class="dropdown-lists">
-                <div class="col-xl-8 bg_light bg_light-wrapper bg_light-wrapper bg-light_lists m-auto d-flex justify-content-between flex-xl-row flex-lg-row flex-md-row flex-column">
-                    <div class="d-inline-block dropdown">
-                        <select name="speed" class="select">
-                            <option disabled selected>Выпадающий список</option>
-                            <option>Элемент 1</option>
-                            <option>Элемент 2</option>
-                            <option>Элемент 3</option>
-                            <option>Элемент 4</option>
-                            <option>Элемент 5</option>
-                        </select>
-                    </div>
-                    <div class="d-inline-block dropdown" id="dropdown">
-                        <select name="speed" class="select">
-                            <option disabled selected>Выпадающий список</option>
-                            <option>Элемент 1</option>
-                            <option>Элемент 2</option>
-                            <option>Элемент 3</option>
-                            <option>Элемент 4</option>
-                            <option>Элемент 5</option>
-                        </select>
+                <div class="col-xl-8 col-lg-10 col bg_light bg_light-wrapper bg-light_lists m-auto">
+                    <div class="col-xl-10 col-lg-9  m-auto d-flex justify-content-between flex-md-row flex-column">
+                        <div class="d-inline-block dropdown">
+                            <select name="speed" class="select">
+                                <option disabled selected>Выпадающий список</option>
+                                <option>Элемент 1</option>
+                                <option>Элемент 2</option>
+                                <option>Элемент 3</option>
+                                <option>Элемент 4</option>
+                                <option>Элемент 5</option>
+                            </select>
+                        </div>
+                        <div class="d-inline-block dropdown" id="dropdown">
+                            <select name="speed" class="select">
+                                <option disabled selected>Выпадающий список</option>
+                                <option>Элемент 1</option>
+                                <option>Элемент 2</option>
+                                <option>Элемент 3</option>
+                                <option>Элемент 4</option>
+                                <option>Элемент 5</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
