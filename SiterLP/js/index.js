@@ -107,7 +107,13 @@ $(document).ready(function(){
         });
     $('#fileinput').change(function() {
         $('#selected_filename').text($('#fileinput]')[0].files[0].name);
-      });
+    });
+
+
+
+    $('.question').hover(function(){
+        $(this).parent().parent().children('.ctr__text').toggleClass('d-block');
+    })
 });
 
 
