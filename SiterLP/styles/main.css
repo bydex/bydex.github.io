@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?z0j1ev');
-  src:  url('../fonts/icomoon.eot?z0j1ev#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?z0j1ev') format('truetype'),
-    url('../fonts/icomoon.woff?z0j1ev') format('woff'),
-    url('../fonts/icomoon.svg?z0j1ev#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?3mbhvr');
+  src:  url('../fonts/icomoon.eot?3mbhvr#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3mbhvr') format('truetype'),
+    url('../fonts/icomoon.woff?3mbhvr') format('woff'),
+    url('../fonts/icomoon.svg?3mbhvr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-link-symbol:before {
+  content: "\e90f";
+}
+.icon-edit:before {
+  content: "\e90b";
+}
+.icon-left-arrow:before {
+  content: "\e90c";
+}
+.icon-menu:before {
+  content: "\e90d";
+}
+.icon-portfolio:before {
+  content: "\e90e";
+}
 .icon-smartphone-iphone:before {
   content: "\e90a";
 }
@@ -63,6 +78,8 @@
   content: "\e903";
   color: #3b91e6;
 }
+
+
 
 
 
