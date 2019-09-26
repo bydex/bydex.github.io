@@ -9,14 +9,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
 </head>
 <body>
-<main class="position-relative">
+<main class="position-relative break-word">
     <div class="left-menu left-menu_standard overflow-auto hover">
         <div class="overflow-auto">
             <div class="logo logo_left-menu">
@@ -25,42 +24,40 @@
 
             <nav class="nav">
                 <a href="#aboutus" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                        <div class="item__img-wrapper d-flex align-items-center"><img src="./img/item__img_about.png" alt="" class="item__img"></div>
+                        <div class="item__img-wrapper d-flex align-items-center justify-content-center"><img src="./img/item__img_about.png" alt="" class="item__img"></div>
                     <p class="item__text text text_s d-inline-block">о нас</p>
                 </a>
 
                 <a href="#services" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                        <div class="item__img-wrapper d-flex align-items-center"><img src="./img/item__img_services.png" alt="" class="item__img"></div>
+                        <div class="item__img-wrapper d-flex align-items-center justify-content-center"><img src="./img/item__img_services.png" alt="" class="item__img"></div>
                     <p class="item__text text text_s d-inline-block">Услуги</p>
                     <i class="item__chevron chevron fas fa-chevron-right ml-auto"></i>
                 </a>
 
                 <a href="#portfolio" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                        <div class="item__img-wrapper d-flex align-items-center">
+                        <div class="item__img-wrapper d-flex align-items-center justify-content-center">
                             <img src="./img/item__img_portfolio.png" alt="" class="item__img">
                         </div>
                     <p class="item__text text text_s d-inline-block">Портфолио</p>
                 </a>
 
                 <a href="#contacts" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                        <div class="item__img-wrapper d-flex align-items-center">
+                        <div class="item__img-wrapper d-flex align-items-center justify-content-center">
                             <img src="./img/item__img_contacts.png" alt="" class="item__img">
                         </div>
                     <p class="item__text text text_s d-inline-block">Контакты</p>
                 </a>
 
                 <a href="#request" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                        <div class="item__img-wrapper d-flex align-items-center">
+                        <div class="item__img-wrapper d-flex align-items-center justify-content-center">
                             <img src="./img/item__img_request.png" alt="" class="item__img">
                         </div>
                     <p class="item__text text text_s d-inline-block">оставить заявку</p>
                 </a>
 
                 <a href="#number" class="item item_nav item_number hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
-                    <div class="item__img-wrapper d-flex align-items-center">
-                            <div class="item__img-wrapper d-flex align-items-center">
-                                <span class="icon-phone"></span>
-                            </div>
+                    <div class="item__img-wrapper d-flex align-items-center justify-content-center">
+                        <span class="icon-phone"></span>
                     </div>
                     <p class="item__text text text_s d-inline-block">Алматы <i class="text_weight_700">3 14 226</i></p>
                     <i class="item__chevron chevron fas fa-chevron-right ml-auto"></i>
@@ -104,12 +101,12 @@
                                     class="map__item text text_xs text_color_white hover hover__link_white">
                                     <i class="map__arrow fas fa-arrow-left"></i>Главная
                                 </a>
-                                <span 
-                                    class="map__item text text_xs text_color_white">
+                                <a href="#"
+                                    class="map__item text text_xs text_color_white pointer-events_none">
                                     <i class="map__arrow fas fa-arrow-left"></i>Блог
-                                </span>
+                                </a>
                             </div>
-                            <h1 class="blog__title text_color_white text_weight_800 text-md-left text-center">Блог</h1>
+                            <h1 class="blog__title text_color_white text_weight_800 text-md-left text-center text_uppercase">Блог</h1>
                         </div>
                     </div>
                 </div>
@@ -210,11 +207,9 @@
                             <li class="ul__item list text">
                                 Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
                             </li>
-                            <br>
                             <li class="ul__item list text">
                                 Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
                             </li>
-                            <br>
                             <li class="ul__item list text">
                                 Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24
                             </li>
@@ -228,11 +223,9 @@
                             <li class="ol__item list text">
                                 Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
                             </li>
-                            <br>
                             <li class="ol__item list text">
                                 Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
                             </li>
-                            <br>
                             <li class="ol__item list text">
                                 Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24
                             </li>
@@ -269,10 +262,10 @@
                             <button class="button button_hovered hover text_color_white text_uppercase">кнопка при нажатии</but>
                         </div>
                         <div class="d-flex justify-content-between buttons__row buttons__row_rounded flex-wrap buttons-small">
-                            <div class="buttons__small d-flex justify-content-between">
-                                <button class="button button_small hover text_color_white text_uppercase">обычная кнопка</button>
-                                <button class="button button_small button_hovered hover text_color_white text_uppercase">кнопка при наведении</button>
-                                <button class="button button_small button_hovered hover text_color_white text_uppercase">кнопка при нажатии</button>
+                            <div class="buttons__small d-flex justify-content-between align-items-start flex-wrap">
+                                <button class="button button_small hover text_color_white text_uppercase">маленькая кнопка</button>
+                                <button class="button button_small button_hovered hover text_color_white text_uppercase">при наведении</button>
+                                <button class="button button_small button_hovered hover text_color_white text_uppercase">при нажатии</button>
                             </div>
                             <div class="buttons__text text_weight_600 d-flex justify-content-xl-center justify-content-lg-start align-items-center">
                                 при нажатии сдвиг на 1 px вниз
@@ -288,11 +281,11 @@
                             <button class="button button_rounded button_hovered hover text_color_white text_uppercase">кнопка при наведении</button>
                             <button class="button button_rounded button_hovered hover text_color_white text_uppercase">кнопка при нажатии</button>
                         </div>
-                        <div class="d-flex justify-content-between buttons__row buttons-small flex-wrap">
-                            <div class="d-flex justify-content-between buttons__small">
-                                <button class="button button_small button_rounded hover text_color_white text_uppercase">обычная кнопка</button>
-                                <button class="button button_small button_rounded button_hovered hover text_color_white text_uppercase">кнопка при наведении</button>
-                                <button class="button button_small button_rounded button_hovered hover text_color_white text_uppercase">кнопка при нажатии</button>
+                        <div class="d-flex justify-content-between buttons__row buttons-small">
+                            <div class="d-flex justify-content-between buttons__small align-items-start flex-wrap">
+                                <button class="button button_small button_rounded hover text_color_white text_uppercase">маленькая кнопка</button>
+                                <button class="button button_small button_rounded button_hovered hover text_color_white text_uppercase">при наведении</button>
+                                <button class="button button_small button_rounded button_hovered hover text_color_white text_uppercase">при нажатии</button>
                             </div>
                         </div>
                     </div>
@@ -311,11 +304,9 @@
                             <li class="ul__item list text">
                                 Посетители сайта <i class="text_weight_600">стали быстрее находить интересующий их товар в каталоге</i> и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
                             </li>
-                            <br>
                             <li class="ul__item list text">
                                 Разделение информации для разных клиентов и подключение аналитики <i class="text_weight_600">помогает маркетологу эффективнее разрабатывать рекламные предложения.</i>
                             </li>
-                            <br>
                             <li class="ul__item list text">
                                 Система управления 1С-Битрикс за счет своего удобства <i class="text_weight_600">экономит время работы с сайтом</i> и позволяет интегрировать его с CRM Битрикс24
                             </li>
@@ -329,11 +320,9 @@
                             <li class="ol__item list text">
                                 Посетители сайта стали быстрее находить интересующий их товар в каталоге и с легкостью узнавать в каком ближайшем магазине удобнее всего его купить, тем самым повышая продажи в дилерской сети компании.
                             </li>
-                            <br>
                             <li class="ol__item list text">
                                 Разделение информации для разных клиентов и подключение аналитики помогает маркетологу эффективнее разрабатывать рекламные предложения.
                             </li>
-                            <br>
                             <li class="ol__item list text">
                                 Система управления 1С-Битрикс за счет своего удобства экономит время работы с сайтом и позволяет интегрировать его с CRM Битрикс24
                             </li>
@@ -916,7 +905,7 @@
                 </a>
                 <a href="" class="pagination__page rounded-circle link_decoration_none">
                     <i class="text_weight_400 pagination__number">4</i></a>
-                <a class="pagination__page rounded-circle link_decoration_none">
+                <a href="" class="pagination__page rounded-circle link_decoration_none pointer-events_none">
                     <i class="text_weight_400 pagination__number pagination__dots">...</i>
                 </a>
                 <a href="" class="pagination__page rounded-circle link_decoration_none">

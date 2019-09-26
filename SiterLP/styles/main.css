@@ -72,7 +72,9 @@ body, html {
   font-style: normal;
   font-weight: 400;
 }
-
+main {
+  overflow-x: hidden;
+}
 li, ol {
   padding: 0;
   margin: 0;
@@ -83,6 +85,10 @@ li {
 }
 
 h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
@@ -244,8 +250,9 @@ h5 {
 }
 
 .button {
-  width: 320px;
+  min-width: 320px;
   min-height: 50px;
+  padding: 10px 42px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
      -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
@@ -256,7 +263,7 @@ h5 {
   position: relative;
   font-size: 18px;
   cursor: pointer;
-
+  margin-top: 10px;
 }
 
 .button:hover {
@@ -282,11 +289,14 @@ h5 {
 }
 
 .button_small {
-  width: 210px;
+  min-width: 210px;
   min-height: 40px;
+  padding: 5px 23px;
   font-size: 15px;
 }
-
+.buttons__text {
+  margin-top: 10px;
+}
 .button_rounded {
   -webkit-border-radius: 25px;
      -moz-border-radius: 25px;
@@ -315,6 +325,10 @@ h5 {
   top: -1px;
 }
 
+.ul__item:not(:last-child), .ol__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .ol {
   counter-reset: myCounter;
 }
@@ -336,6 +350,10 @@ h5 {
 .bg_white {
   background-color: #fff;
 }
+.pointer-events_none {
+  pointer-events: none;
+}
+
 
 .checkbox {
   display: block;
@@ -462,14 +480,15 @@ h5 {
 }
 
 .item_nav {
-  padding: 0 36px 0 21px;
-  height: 57px;
+  padding: 18px 36px 18px 21px;
 }
-
+.item__text {
+  line-height: 20px;
+}
 
 .item__img-wrapper {
   margin-right: 15px;
-  width: 25px;
+  min-width: 25px;
 }
 
 
@@ -521,21 +540,20 @@ main {
 
 /* HEADER-blog */
 .blog {
-  background: url("../img/blog_background.png") center;
+  background: url("../img/blog_background.png") center no-repeat, #343037;
   min-height: 208px;
   vertical-align: top;
+  background-size: cover;
 }
 
 .blog__nav {
-  background: url("../img/blog__nav_bg.png") left bottom no-repeat;
-  background-position-x: -122px;
-  overflow: hidden;
   padding: 41px 0 0 0;
 }
 
 .blog__title {
   padding-top: 21px;
   padding-bottom: 57px;
+  overflow-wrap: break-word;
 }
 
 .map__item:not(:last-child) {
@@ -544,6 +562,10 @@ main {
 
 .map__arrow {
   margin-right: 9px;
+}
+
+.break-word {
+  word-break: break-word;
 }
 
 
@@ -655,8 +677,8 @@ main {
 }
 
 .selected-texts__item {
-  padding: 15px 27px 14px 36px;
-  line-height: 21px;
+  padding: 12px 27px 12px 36px;
+  line-height: 26px;
 }
 
 .selected-texts__item:not(:last-child) {
@@ -669,25 +691,28 @@ main {
 }
 
 .buttons_block {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .buttons__row:not(:last-child) {
-  padding-bottom: 27px;
+  margin-bottom: 10px;
 }
 
 .buttons__row_rounded {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .buttons__small {
   width: 666px;
 }
+.button_small:not(:last-child) {
+  margin-right: 18px;
+}
 
 .buttons__text {
   color: #212121;
   font-size: 13px;
-  width: 320px;
+  min-width: 320px;
 }
 
 
@@ -970,6 +995,7 @@ main {
 .dark-form_standard {
   margin-top: 120px;
   background: url("../img/dark_bg.png") center no-repeat;
+  background-size: cover;
   margin-bottom: 82px;
   padding-top: 97px;
   padding-bottom: 122px;
@@ -1012,9 +1038,7 @@ main {
 }
 
 .form__number {
-  line-height: 90px;
-  padding: 0 42px 0 40px;
-  white-space: nowrap;
+  padding: 22px 42px 22px 40px;
   width: 100%;
   max-width: 420px;
 }
@@ -1329,7 +1353,7 @@ main {
   overflow: hidden;
   margin-left: -5px;
   margin-right: -5px;
-  padding: 33px 50px 27px 30px;
+  padding: 27px 50px 27px 30px;
 }
 
 .alert__success {
@@ -1501,7 +1525,13 @@ main {
   color: #343037 !important;
 }
 
-
+.plan__item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 .plan-tariff.plan_red {
   margin-top: 50px;
 }
@@ -1713,10 +1743,14 @@ a.pagination__page:not(:last-child) {
   opacity: 1;
   background-color: #e6eff8;
 }
+.pagination__page_active .pagination__number {
+  border-bottom: 0;
+}
 
 .pagination__number {
   border-bottom: 2px dotted #3b91e6;
 }
+
 
 .pagination__dots {
   color: transparent;
@@ -1800,14 +1834,12 @@ a.pagination__page:not(:last-child) {
   .buttons_block {
     padding-right: 5px;
   }
-  .buttons__big .button:last-child {
-    margin-top: 10px;
-  }
+  
   .buttons__big .button {
     margin-right: 28px;
   }
   .buttons__text {
-    margin-top: 28px;
+    margin-top: 18px;
   }
 
   .checkboxes__line label:first-child {
@@ -2199,8 +2231,7 @@ a.pagination__page:not(:last-child) {
     padding-bottom: 27px;
   }
   .form__number {
-    line-height: 63px;
-    padding: 0;
+    padding: 12px 42px 12px 40px;
     font-size: 32px;
   }
   .form__undertext {
