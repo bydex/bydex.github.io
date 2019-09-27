@@ -31,7 +31,7 @@
                 <a href="#services" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
                         <div class="item__img-wrapper d-flex align-items-center justify-content-center"><span class="icon-menu"></span></div>
                     <p class="item__text text text_s d-inline-block">Услуги</p>
-                    <i class="item__chevron chevron fas fa-chevron-right ml-auto"></i>
+                    <span class="icon-context-arrow chevron-right chevron item__chevron ml-auto"></span>
                 </a>
 
                 <a href="#portfolio" class="item item_nav hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
@@ -60,7 +60,7 @@
                         <span class="icon-phone"></span>
                     </div>
                     <p class="item__text text text_s d-inline-block">Алматы <i class="text_weight_700">3 14 226</i></p>
-                    <i class="item__chevron chevron fas fa-chevron-right ml-auto"></i>
+                    <span class="icon-context-arrow chevron-right chevron item__chevron ml-auto"></span>
                 </a>
 
                 <a href="#showreel" class="item item_nav item_show hover hover_pink hover__link_white text_color_white link_decoration_none d-flex align-items-center w-100">
@@ -85,7 +85,7 @@
                             <i class="select__text text">
                                 Астана <i class="text_weight_700">696-226</i>
                             </i>
-                            <img class="select__chevron" src="./img/select__chevron.png"></img>
+                            <span class="icon-context-arrow select__chevron chevron-down chevron ml-auto"></span>
                         </div>
                     </div>
                 </div>
@@ -98,11 +98,11 @@
                         <div class="blog__nav">
                             <div class="map">
                                 <a  href="#" 
-                                    class="map__item text text_xs text_color_white hover hover__link_white">
+                                    class="map__item text text_xs text_color_white hover hover__link_white position-relative">
                                     <span class="icon-left-arrow map__arrow"></span>Главная
                                 </a>
                                 <a href="#"
-                                    class="map__item text text_xs text_color_white pointer-events_none">
+                                    class="map__item text text_xs text_color_white pointer-events_none position-relative">
                                     <span class="icon-left-arrow map__arrow"></span>Блог
                                 </a>
                             </div>
@@ -614,7 +614,7 @@
         </div>
     </div>
 
-    <div class="overflow-hidden">
+    <div>
         <div class="container mobile-tariff">
             <div class="row">
                 <div class="wrapper-select-block w-100">
@@ -679,10 +679,10 @@
             </div>
         </div>
     </div>
-    <div class="plan-overflow mobile-tariff">
-        <div class="container plan-overflow plan-overflow-1">
+    <div class="mobile-tariff">
+        <div class="container">
             <div class="row">
-                <div class="wrapper-select-block w-100 d-flex">
+                <div class="wrapper-select-block w-100 d-flex flex-column">
                     <div class="select_block select_red select_all-red text_weight_600">
                         <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
                         <div id="select__list" class="select__list">
@@ -701,7 +701,7 @@
                         </div>
                     </div>
                     <div class="plan plan-tariff plan_red border-0 p-0">
-                        <div class="plan-tariff-2 d-flex">
+                        <div class="plan-tariff-2 d-flex m-auto">
                             <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
                             <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
                             <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
@@ -712,10 +712,10 @@
             </div>
         </div>
     </div>
-    <div class="plan-overflow colors__item_pinkToPurple mobile-tariff">
-        <div class="container plan-overflow plan-overflow-2">
+    <div class=" colors__item_pinkToPurple mobile-tariff">
+        <div class="container">
             <div class="row">
-                <div class="wrapper-select-block w-100 d-flex">
+                <div class="wrapper-select-block w-100 d-flex flex-column">
                     <div class="select_block select_red select_all-red text_weight_600">
                         <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
                         <div id="select__list" class="select__list">
@@ -734,7 +734,7 @@
                         </div>
                     </div>
                     <div class="plan plan-tariff plan_white d-flex border-0 p-0">
-                        <div class="plan-tariff-2 d-flex">
+                        <div class="plan-tariff-2 d-flex m-auto">
                             <div class="plan__item plan__item_active text text-center text_uppercase hover text_xs">до 50</div>
                             <div class="plan__item text text-center hover text_uppercase text_xs">до 100</div>
                             <div class="plan__item text text-center hover text_uppercase text_xs">до 200</div>
@@ -803,88 +803,101 @@
 
     <div class="container ctrs">
         <div class="row">
-            <div class="col-xl-10 p-0 m-auto d-flex align-items-start flex-xl-row flex-lg-row flex-md-row flex-column">
-                <div class="ctr_1 ctr-wrapper w-50 colors__item_pinkToPurple">
-                    <div class="ctr m-auto">
-                        <p class="ctr__title text text_color_white text-center">Средний показатель качества<br> рекламных объявлений<br>(CTR) - 22,24% <i class="question text_weight_600 text_color_primary d-inline-block rounded-circle bg_white">?</i></p>
-                        <div class="ctr__text text m-auto bg_white">CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика пользователей по ним</div>
-                    </div>
-                </div>
-
-                <div class="ctr_2 ctr-wrapper w-50">
-                    <div class="ctr ctr_red m-auto">
-                        <p class="ctr__title text text-center">Средний показатель качества<br> рекламных объявлений<br>(CTR) - 22,24% <i class="question text_weight_600 text_color_primary d-inline-block rounded-circle border_red">?</i></p>
-                        <div class="ctr__text text m-auto bg_white">CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика пользователей по ним</div>
+            <div class="d-none d-lg-block col-md-1 col-lg-hidden"></div>
+            <div class="col-lg-5 col-md-6 p-lg-0">
+                <div class="ctr_1 ctr-wrapper colors__item_pinkToPurple">
+                    <div class="ctr m-auto position-relative">
+                        <p class="ctr__title text text_color_white text-center">Средний показатель качества рекламных объявлений <span class="text-nowrap d-block">(CTR) - 22,24% <i class="question text_weight_600 text_color_primary d-inline-block rounded-circle bg_white">?</i></span></p>
+                        <div class="ctr__text-wrapper colors__item_pinkToPurple">
+                            <div class="ctr__text text m-auto bg_white">CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика пользователей по ним</div>
+                        </div>
                     </div>
                 </div>
             </div>
+                
+            <div class="col-lg-5 col-md-6">
+                <div class="ctr_2 ctr-wrapper">
+                    <div class="ctr ctr_red m-auto position-relative">
+                        <p class="ctr__title text text-center">Средний показатель качества<br> рекламных объявлений <span class="text-nowrap d-block">(CTR) - 22,24% <i class="question text_weight_600 text_color_primary d-inline-block rounded-circle border_red">?</i></span></p>
+                        <div class="ctr__text-wrapper">
+                            <div class="ctr__text text m-auto bg_white">CTR — Сlick-through rate. Это отношение кликов по объявлению к показам. Например, если вам говорят, что CTR равен 3%, это означает, что на 100 показанных объявления приходится три клика пользователей по ним</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
         </div>
     </div>
     <div class="table-1">
         <div id="showreel" class="container">
-            <div class="table-wrapper-1 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-start justify-content-start">
-                <div>
-                    <h6 class="table__title m-auto">Заголовок таблицы</h6>
-                    <table class="table table_red text table-bordered m-auto">
-                        <thead class="thead thead_red text_color_white text_weight_600">
+            <div class="col-12">
+                <div class="table-wrapper-1">
+                    <div>
+                        <h6 class="table__title m-auto">Заголовок таблицы</h6>
+                        <table class="table table_red text table-bordered m-auto">
+                            <thead class="thead thead_red text_color_white text_weight_600">
+                                <tr>
+                                    <td class="table__col" scope="col">Продукты</td>
+                                    <td class="table__col" scope="col">Стоимость</td>
+                                    <td class="table__col" scope="col">Продолжительность</td>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody tbody_red">
+                                <tr>
+                                    <td aria-label="Продукты">Прототипы</td>
+                                    <td aria-label="Стоимость">от 50 000 тг</td>
+                                    <td aria-label="Продолжительность">1 месяц</td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Продукты">Адаптивные и композитные</td>
+                                    <td aria-label="Стоимость">от 500 000 тг</td>
+                                    <td aria-label="Продолжительность">6 месяцев</td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Продукты">Landing page</td>
+                                    <td aria-label="Стоимость">от 200 000 тг</td>
+                                    <td aria-label="Продолжительность">3 месяца</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+    <div class="table-wrapper-2">
+        <div class="container table-wrapper_2">
+            <div class="col-12">
+                <div class="table-wrapper_margin">
+                    <h6 class="table__title text_color_white m-auto">Заголовок таблицы</h6>
+                    <table class="table table_white text table-bordered m-auto">
+                        <thead class="thead thead_white text_color_pink text_weight_600 bg_white">
                             <tr>
                                 <td class="table__col" scope="col">Продукты</td>
                                 <td class="table__col" scope="col">Стоимость</td>
                                 <td class="table__col" scope="col">Продолжительность</td>
                             </tr>
                         </thead>
-                        <tbody class="tbody tbody_red">
+                        <tbody class="tbody tbody_white text_color_white">
                             <tr>
-                                <td>Прототипы</td>
-                                <td>от 50 000 тг</td>
-                                <td>1 месяц</td>
+                                <td aria-label="Продукты">Прототипы</td>
+                                <td aria-label="Стоимость">от 50 000 тг</td>
+                                <td aria-label="Продолжительность">1 месяц</td>
                             </tr>
                             <tr>
-                                <td>Адаптивные и композитные</td>
-                                <td>от 500 000 тг</td>
-                                <td>6 месяцев</td>
+                                <td aria-label="Продукты">Адаптивные и композитные</td>
+                                <td aria-label="Стоимость">от 500 000 тг</td>
+                                <td aria-label="Продолжительность">6 месяцев</td>
                             </tr>
                             <tr>
-                                <td>Landing page</td>
-                                <td>от 200 000 тг</td>
-                                <td>3 месяца</td>
+                                <td aria-label="Продукты">Landing page</td>
+                                <td aria-label="Стоимость">от 200 000 тг</td>
+                                <td aria-label="Продолжительность">3 месяца</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="table-wrapper-2">
-        <div class="container d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-start justify-content-start table-wrapper_2">
-            <div class="table-wrapper_margin">
-                <h6 class="table__title text_color_white m-auto">Заголовок таблицы</h6>
-                <table class="table table_white text table-bordered m-auto">
-                    <thead class="thead thead_white text_color_pink text_weight_600 bg_white">
-                        <tr>
-                            <td class="table__col" scope="col">Продукты</td>
-                            <td class="table__col" scope="col">Стоимость</td>
-                            <td class="table__col" scope="col">Продолжительность</td>
-                        </tr>
-                    </thead>
-                    <tbody class="tbody tbody_white text_color_white">
-                        <tr>
-                            <td>Прототипы</td>
-                            <td>от 50 000 тг</td>
-                            <td>1 месяц</td>
-                        </tr>
-                        <tr>
-                            <td>Адаптивные и композитные</td>
-                            <td>от 500 000 тг</td>
-                            <td>6 месяцев</td>
-                        </tr>
-                        <tr>
-                            <td>Landing page</td>
-                            <td>от 200 000 тг</td>
-                            <td>3 месяца</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>
@@ -931,14 +944,16 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="container d-flex justify-content-between align-items-center  flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column">
-            <p class="footer__rights text text_m text_color_white order-xl-1 order-lg-1 order-md-1 order-sm-2 order-2">©2018 ТОО Компания «Siter.KZ» <br>Все права защищены</p>
-            <div class="socials d-flex align-items-center order-xl-2 order-lg-2 order-md-2 order-sm-1 order-1">
-                <p class="socials__text socials__text_footer text text_color_white">Мы в социальных сетях</p>
-                <div class="socials__items d-flex">
-                    <a href="#" class="socials__item"><img src="./img/socials__item_inst.png" alt=""></a>
-                    <a href="#" class="socials__item"><img src="./img/socials__item_facebook.png" alt=""></a>
-                    <a href="#" class="socials__item"><img src="./img/socials__item_vk.png" alt=""></a>
+        <div class="container">
+            <div class="col-12 d-flex justify-content-between align-items-center flex-md-row flex-column">
+                <p class="footer__rights text text_m text_color_white order-xl-1 order-lg-1 order-md-1 order-sm-2 order-2">©2018 ТОО Компания «Siter.KZ» <br>Все права защищены</p>
+                <div class="socials d-flex align-items-center order-xl-2 order-lg-2 order-md-2 order-sm-1 order-1">
+                    <p class="socials__text socials__text_footer text text_color_white">Мы в социальных сетях</p>
+                    <div class="socials__items d-flex">
+                        <a href="#" class="socials__item"><img src="./img/socials__item_inst.png" alt=""></a>
+                        <a href="#" class="socials__item"><img src="./img/socials__item_facebook.png" alt=""></a>
+                        <a href="#" class="socials__item"><img src="./img/socials__item_vk.png" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>

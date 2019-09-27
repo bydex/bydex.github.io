@@ -43,6 +43,7 @@
 }
 .icon-smartphone-iphone:before {
   content: "\e90a";
+  font-size: 23px;
 }
 .icon-clip:before {
   content: "\e909";
@@ -79,7 +80,13 @@
   color: #3b91e6;
 }
 
-
+.chevron-right {
+  transform: rotate(90deg);
+}
+.chevron-down {
+  transform: rotate(180deg);
+  font-weight: 800;
+}
 
 
 
@@ -88,6 +95,7 @@ body, html {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
+  min-width: 320px;
 }
 main {
   overflow-x: hidden;
@@ -576,9 +584,17 @@ main {
 .map__item:not(:last-child) {
   margin-right: 28px;
 }
-
+.map__item {
+  padding-left: 20px;
+}
 .map__arrow {
-  margin-right: 9px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.map__arrow::before {
+
 }
 
 .break-word {
@@ -684,7 +700,9 @@ main {
 .links__item:not(:last-child) {
   margin-right: 55px;
 }
-
+.links__item:hover {
+  color: rgba(59, 145, 230, 0.8)
+}
 .link__img {
   padding-right: 11px;
 }
@@ -1474,10 +1492,6 @@ main {
 .mobile-tariff {
   display: none;
 }
-.plan-overflow {
-  overflow-x: auto;
-  overflow-y: visible;
-}
 .plan-overflow .plan-tariff {
   margin-top: 0 !important;
 }
@@ -1603,23 +1617,14 @@ main {
   cursor: pointer;
 }
 
-.ctr_1 {
-  margin-left: -22px;
-  margin-right: 22px;
-}
 
-.ctr_2 {
-  margin-right: -22px;
-  margin-left: 22px;
-}
 
 .ctr_red .question {
   border-width: 1px;
   line-height: 18px;
   color: #dc107e;
 }
-
-.ctr_red .ctr__text {
+.ctr__text {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
      -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -1627,15 +1632,25 @@ main {
 
 .ctr-wrapper {
   padding-top: 23px;
-  padding-bottom: 26px;
+  padding-bottom: 10px;
 }
 
+.ctr__title {
+  max-width: 275px;
+  margin: auto;
+}
 .ctr__text {
   width: 330px;
   padding: 17px 25px;
-  margin-top: 9px !important;
   font-size: 13px;
+}
+.ctr__text-wrapper {
+  position: absolute; 
+  width: 100%;
+  top: calc(100% + 10px);
+  padding-bottom: 25px;
   display: none;
+  z-index: 1;
 }
 
 
@@ -1645,14 +1660,16 @@ main {
   margin-top: 118px;
   margin-bottom: 108px;
 }
-
+table {
+  word-break: break-word;
+}
 .table-wrapper-2 {
   padding: 53px 0 80px 0;
-  background: url("../img/dark_bg.png") center no-repeat;
+  background: url("../img/dark_bg.png") center repeat-y;
+  background-size: cover;
 }
 
 .table, .table__title {
-  width: 969px;
   border: none;
 }
 
@@ -1661,11 +1678,16 @@ main {
 }
 
 .table td {
-  line-height: 70px;
-  height: 70px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   padding-left: 19px;
 }
-
+.table__col:nth-child(2) {
+  width: 20%;
+}
+.table__col:last-child {
+  width: 30%;
+}
 .thead td {
   padding-left: 22px;
 }
@@ -1686,13 +1708,7 @@ main {
   background: url("../img/table_white-bg.png") center;
 }
 
-.table__col:nth-child(1) {
-  width: 525px;
-}
 
-.table__col:nth-child(2) {
-  width: 197px;
-}
 
 .thead_red {
   background-color: #dd1781;
@@ -1863,17 +1879,8 @@ a.pagination__page:not(:last-child) {
     margin-right: 22px;
   }
 
-  .table-1,
-  .table-wrapper-2 {
-    overflow-x: auto;
-  }
   
-  .table, .table__title {
-    width: 731px;
-  }
-  .thead .table__col:first-child {
-    width: 300px;
-  }
+
 
   
   .plan-tariff-2 {
@@ -2042,15 +2049,42 @@ a.pagination__page:not(:last-child) {
   }
 
   .table td {
-    line-height: 48px !important;
-    height: 48px !important;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    display: block;
+    border-bottom: 2px solid #e8e9eb;
+    background: none !important;
+  }
+  .table_red tr {
+    border-bottom-color: #dd1781;
+  }
+  table td {
+    display: block;
+    text-align: left;
+  }
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+  }
+  .table_red td:nth-child(2n+2) {
+    background-color: #f0f0f0;
   }
 
-  .table td, .table th {
-    padding-top: 0;
-    padding-bottom: 0;
+  .table_white td:nth-child(2n+2) {
+    background: url("../img/table_white-bg.png") center;
   }
-
+  .table_white td:nth-child(2n+1) {
+    background: url("../img/bg_white-bg.png") center;
+    background-position-x: -7px;
+  }
   .forms-wrapper-1 {
     width: 100% !important;
   }

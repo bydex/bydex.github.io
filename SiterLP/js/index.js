@@ -28,6 +28,7 @@ $(document).ready(function(){
             }
         },]
     });
+    // slider 
 
 
     // add cloned buttons for slider
@@ -102,9 +103,9 @@ $(document).ready(function(){
 
 
 
-        $('#falseinput').click(function(){
-          $("#fileinput").click();
-        });
+    $('#falseinput').click(function(){
+        $("#fileinput").click();
+    });
     $('#fileinput').change(function() {
         $('#selected_filename').text($('#fileinput]')[0].files[0].name);
     });
@@ -112,7 +113,7 @@ $(document).ready(function(){
 
 
     $('.question').hover(function(){
-        $(this).parent().parent().children('.ctr__text').toggleClass('d-block');
+        $(this).parent().parent().parent().children('.ctr__text-wrapper').toggleClass('d-block');
     })
 });
 
