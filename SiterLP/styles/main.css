@@ -1455,26 +1455,13 @@ main {
 .mobile-tariff {
   display: none;
 }
-.plan-overflow .plan-tariff {
-  margin-top: 0 !important;
-}
-.plan-overflow .plan-tariff-2 {
-  margin-top: 0 !important;
-  margin-left: 89px;
-}
-.plan-overflow-1 .plan-tariff-2 {
-  position: relative;
-  top: 12px;
-}
-.plan-overflow-2 .plan-tariff-2 {
-  position: relative;
-  top: -12px;
-}
 .plan-overflow-1 .wrapper-select-block,
 .plan-overflow-1 .wrapper-select-block {
   width: auto !important;
 }
-
+.plan-tariff-2 {
+  display: none;
+}
 
 
 

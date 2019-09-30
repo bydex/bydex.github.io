@@ -48,6 +48,7 @@ $(document).ready(function(){
         $(".plan__item").click(function(){
             $(this).parent().children().removeClass("plan__item_active");
             $(this).addClass("plan__item_active");
+            $(this).not('.text_xs').closest('.plan-tariff').find('.plan-tarrif-2-wrapper').children().removeClass('d-flex').eq($(this).index()).addClass('d-flex')
         });
 
 
