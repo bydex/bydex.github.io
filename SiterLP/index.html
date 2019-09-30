@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <title>SITER.KZ</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
@@ -169,7 +169,7 @@
                 </div>
                 <div class="col-2 d-none d-lg-flex ml-auto justify-content-xl-start justify-content-lg-end">
                     <div class="colors-wrapper">
-                        <div class="colors colors_standard">
+                        <ul class="colors colors_standard">
                             <li class="colors__item colors__item_standard colors__item_pink"></li>
                             <li class="colors__item colors__item_standard colors__item_brightGray"></li>
                             <li class="colors__item colors__item_standard colors__item_blue"></li>
@@ -177,7 +177,7 @@
                             <li class="colors__item colors__item_standard colors__item_pinkToWhite"></li>
                             <li class="colors__item colors__item_standard colors__item_pinkToPurple"></li>
                             <li class="colors__item colors__item_standard colors__item_gray"></li>
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -257,9 +257,9 @@
                             <button class="button button_hovered hover text_color_white text_uppercase">кнопка при нажатии</button>
                         </div>
                         <div class="d-flex justify-content-xl-between justify-content-lg-start buttons__row buttons__big flex-wrap"> 
-                            <button class="button button_transparent hover text_color_white text_uppercase">обычная кнопка</but>
+                            <button class="button button_transparent hover text_color_white text_uppercase">обычная кнопка</button>
                             <button class="button button_hovered hover text_color_white text_uppercase">кнопка при наведении</button>
-                            <button class="button button_hovered hover text_color_white text_uppercase">кнопка при нажатии</but>
+                            <button class="button button_hovered hover text_color_white text_uppercase">кнопка при нажатии</button>
                         </div>
                         <div class="d-flex justify-content-between buttons__row buttons__row_rounded flex-wrap buttons-small">
                             <div class="buttons__small d-flex justify-content-between align-items-start flex-wrap">
@@ -368,7 +368,7 @@
                             <input type="checkbox" checked="checked">
                             <span class="checkmark checkmark_white checkmark_standard"></span>
                         </label>
-                        <label class="checkbox checkbox_white d-inline text_color_white class="label__text><span class="label__text">Согласен с условиями обработки персональных данных</span> 
+                        <label class="checkbox checkbox_white d-inline text_color_white"><span class="label__text">Согласен с условиями обработки персональных данных</span> 
                             <input type="checkbox">
                             <span class="checkmark checkmark_white checkmark_standard"></span>
                         </label>
@@ -396,7 +396,7 @@
                     <div class="gaonutosal">
                         <div class="pesontedan text_color_primary">
                             <input id="pesontedan-one" checked='checked' type="checkbox" name="pesontedans" />
-                            <label for="pesontedan-one"><h5 class="pesontedan__title text_weight_600 d-flex align-items-center"><span>Что такое контекстная реклама?</span></h5></label>
+                            <label for="pesontedan-one"><span class="pesontedan__title text_weight_600 d-flex align-items-center">Что такое контекстная реклама?</span></label>
                             <div class="pesontedan-content">
                                 <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
                             </div>
@@ -404,21 +404,21 @@
 
                         <div class="pesontedan pesontedan_hover text_color_primary">
                             <input id="pesontedan-two" type="checkbox" name="pesontedans" />
-                            <label for="pesontedan-two"><h5 class="pesontedan__title text text_weight_600 d-flex align-items-center"><span>Как выглядит контекстная реклама?</span></h5></label>
+                            <label for="pesontedan-two"><span class="pesontedan__title text text_weight_600 d-flex align-items-center">Как выглядит контекстная реклама?</span></label>
                             <div class="pesontedan-content">
                                 <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
                             </div>
                         </div>
                         <div class="pesontedan text_color_primary">
                             <input id="pesontedan-three" type="checkbox" name="pesontedans" />
-                            <label for="pesontedan-three"><h5 class="pesontedan__title text text_weight_600 d-flex align-items-center"><span>Где будут показываться мои объявления?</span></h5></label>
+                            <label for="pesontedan-three"><span class="pesontedan__title text text_weight_600 d-flex align-items-center">Где будут показываться мои объявления?</span></label>
                             <div class="pesontedan-content">
                                 <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
                             </div>
                         </div>
                         <div class="pesontedan text_color_primary">
                             <input id="pesontedan-four" type="checkbox" name="pesontedans" />
-                            <label for="pesontedan-four"><h5 class="pesontedan__title text_weight_600 text d-flex align-items-center"><span>Каким образом высчитывается цена входа в рекламные места, как списывается цена за клик?</span> </h5></label>
+                            <label for="pesontedan-four"><span class="pesontedan__title text_weight_600 text d-flex align-items-center">Каким образом высчитывается цена входа в рекламные места, как списывается цена за клик?</span></label>
                             <div class="pesontedan-content">
                                 <p class="text pesontedan__text"><i class="text_weight_600">Контекстная реклама —</i> это текстовые объявления, которые показываются пользователям по запросам, если эти запросы рекламодатель добавил в настройки рекламной кампании. Объявления показываются пользователю именно в тот момент, когда он сам проявил интерес к товару или услуге и, возможно, готов к покупке. Контекстная реклама бывает поисковой и тематической.</p>
                             </div>
@@ -467,7 +467,7 @@
 
     <div id="request" class="dark-form dark-form_standard">
         <div class="container">
-            <form action="" class="form form_dark text-center text_color_white">
+            <form action="#" class="form form_dark text-center text_color_white">
                 <div class="row">
                     <div class="col-xl-8 col-lg-9 col-md-11 col m-auto">
                         <h2 class="form__title form__title_dark text_uppercase">
@@ -488,13 +488,13 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-5 col-md-6 col p-sm-0 m-auto">
                         <div class="forms-wrapper forms-checkbox-wrapper m-auto w-100">
-                            <div class="form__item-wrapper" id="user">
+                            <div class="form__item-wrapper user">
                                 <input class="w-100 form__item form__item_exp" name="user" required placeholder="Иванов Сергей">
                             </div>
-                            <div class="form__item-wrapper" id="tel">
+                            <div class="form__item-wrapper tel">
                                 <input class="w-100 form__item form__item_exp" type="tel" pattern="^[ 0-9]+$" placeholder='+7 771 224 21 21' required>
                             </div>
-                            <div class="form__item-wrapper" id="email">
+                            <div class="form__item-wrapper email">
                                 <input class="w-100 form__item form__item_exp" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
                             </div>
                         </div>
@@ -506,7 +506,7 @@
                             <p class="undercheckbox-text text text_color_white">* — обязательные для заполнения поля</p>
                         </div>
                         
-                        <input class="button form__button form__button_dark hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
+                        <input class="button form__button form__button_dark hover text_color_white text_uppercase text" type="submit" value="оставить заявку">
                     </div>
                 </div>
             </form>              
@@ -514,7 +514,7 @@
     </div>
     <div id="contacts" class="light-form">
         <div class="container">
-            <form action="" class="form text-center">
+            <form action="#" class="form text-center">
 
                 <div class="col-xl-8 col-lg-10 m-auto bg_form bg_light bg_light-wrapper">
                     <div class="col-xl-10 m-auto">
@@ -527,13 +527,13 @@
                     <div class="col-xl-10 col-lg-10 col-md-9 col m-auto">
                         <div class="d-flex flex-md-row flex-column">
                             <div class="w-50 forms-wrapper-1 forms-mobile">
-                                <div class="form__item-wrapper" id="user">
+                                <div class="form__item-wrapper user">
                                     <input class="w-100 form__item form__item_exp input_border text" name="user" required placeholder="Иванов Сергей">
                                 </div>
-                                <div class="form__item-wrapper" id="tel">
+                                <div class="form__item-wrapper tel">
                                     <input class="w-100 form__item form__item_exp input_border text" type="tel" pattern="^[ 0-9]+$" placeholder='+7 771 224 21 21' required>
                                 </div>
-                                <div class="form__item-wrapper" id="email">
+                                <div class="form__item-wrapper email">
                                     <input class="w-100 form__item form__item_exp input_border text" type="email" pattern="[^ @]*@[^ @]*" placeholder="ivanov@mail.ru" required>
                                 </div>
                             </div>
@@ -543,10 +543,10 @@
                         <p class="undercheckbox-text text forms-mobile">* — обязательные для заполнения поля</p>
                         <div class="input-file text-left forms-mobile d-block d-md-none">
                             <input type="file" id="file" />
-                            <label for="file" /><span class="icon-clip"></span>Прикрепить файл</label>
+                            <label for="file"><span class="icon-clip"></span>Прикрепить файл</label>
                         </div>
                             
-                        <input class="button form__button form__button_light forms-mobile hover text_color_white text_uppercase text" type="submit" value="оставить заявку"></input>
+                        <input class="button form__button form__button_light forms-mobile hover text_color_white text_uppercase text" type="submit" value="оставить заявку">
                     </div> 
                         
                 </div>
@@ -619,8 +619,8 @@
             <div class="row">
                 <div class="wrapper-select-block w-100">
                     <div class="select_block select_red select__rounded text_weight_600">
-                        <div id="select__active" class="select__active select__rounded d-flex align-items-center text-left">Landing Page</div>
-                        <div id="select__list" class="select__list">
+                        <div class="select__active select__rounded d-flex align-items-center text-left">Landing Page</div>
+                        <div class="select__list">
                             <div class="select__item">
                                 <p class="select__tariff text text-left">Landing Page</p>
                             </div>
@@ -639,9 +639,9 @@
                 <div class="wrapper-select-block wrapper-select-block_bg w-100 position-relative">
                     <div class="select_block select_red select_red-white text_weight_600">
 
-                        <div id="select__active" class="select__active d-flex align-items-center text-left">Подготовительный</div>
+                        <div class="select__active d-flex align-items-center text-left">Подготовительный</div>
 
-                        <div id="select__list" class="select__list">
+                        <div class="select__list">
                             <div class="select__item">
                                 <p class="select__tariff text text-left">Подготовительный</p>
                             </div>
@@ -659,8 +659,8 @@
                 </div>
                 <div class="wrapper-select-block w-100">
                     <div class="select_block select_red select_white-red text_weight_600">
-                        <div id="select__active" class="select__active d-flex align-items-center text-left">Подготовительный</div>
-                        <div id="select__list" class="select__list">
+                        <div class="select__active d-flex align-items-center text-left">Подготовительный</div>
+                        <div class="select__list">
                             <div class="select__item">
                                 <p class="select__tariff text text-left">Подготовительный</p>
                             </div>
@@ -684,8 +684,8 @@
             <div class="row">
                 <div class="wrapper-select-block w-100 d-flex flex-column">
                     <div class="select_block select_red select_all-red text_weight_600">
-                        <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
-                        <div id="select__list" class="select__list">
+                        <div class="select__active d-flex align-items-center text-left">Базовый</div>
+                        <div class="select__list">
                             <div class="select__item">
                                 <p class="select__tariff text text-left">Базовый</p>
                             </div>
@@ -717,8 +717,8 @@
             <div class="row">
                 <div class="wrapper-select-block w-100 d-flex flex-column">
                     <div class="select_block select_red select_all-red text_weight_600">
-                        <div id="select__active" class="select__active d-flex align-items-center text-left">Базовый</div>
-                        <div id="select__list" class="select__list">
+                        <div class="select__active d-flex align-items-center text-left">Базовый</div>
+                        <div class="select__list">
                             <div class="select__item">
                                 <p class="select__tariff text text-left">Базовый</p>
                             </div>
@@ -837,9 +837,9 @@
                         <table class="table table_red text table-bordered m-auto">
                             <thead class="thead thead_red text_color_white text_weight_600">
                                 <tr>
-                                    <td class="table__col" scope="col">Продукты</td>
-                                    <td class="table__col" scope="col">Стоимость</td>
-                                    <td class="table__col" scope="col">Продолжительность</td>
+                                    <th class="table__col" scope="col">Продукты</th>
+                                    <th class="table__col" scope="col">Стоимость</th>
+                                    <th class="table__col" scope="col">Продолжительность</th>
                                 </tr>
                             </thead>
                             <tbody class="tbody tbody_red">
@@ -874,9 +874,9 @@
                     <table class="table table_white text table-bordered m-auto">
                         <thead class="thead thead_white text_color_pink text_weight_600 bg_white">
                             <tr>
-                                <td class="table__col" scope="col">Продукты</td>
-                                <td class="table__col" scope="col">Стоимость</td>
-                                <td class="table__col" scope="col">Продолжительность</td>
+                                <th class="table__col" scope="col">Продукты</th>
+                                <th class="table__col" scope="col">Стоимость</th>
+                                <th class="table__col" scope="col">Продолжительность</th>
                             </tr>
                         </thead>
                         <tbody class="tbody tbody_white text_color_white">
@@ -905,10 +905,10 @@
 
     <div class="container">
         <div class="pagination pagination-wrapper d-flex justify-content-center align-items-center text-center">
-            <i class="fas fa-chevron-left paginations__arrows d-flex justify-content-center align-items-center rounded-circle hover"></i>
+            <i class="icon-context-arrow chevron-left paginations__arrows d-flex justify-content-center align-items-center rounded-circle hover"></i>
             <div class="pagination pagination_wrapper d-flex">
                 <a href="" class="pagination__page pagination__page_active rounded-circle link_decoration_none">
-                    <i class="text_weight_400 pagination__number">1</i></a>
+                    <i class="text_weight_400 pagination__number">1</i>
                 </a>
                 <a href="" class="pagination__page rounded-circle link_decoration_none">
                     <i class="text_weight_400 pagination__number">2</i>
@@ -917,7 +917,8 @@
                     <i class="text_weight_400 pagination__number">3</i>
                 </a>
                 <a href="" class="pagination__page rounded-circle link_decoration_none">
-                    <i class="text_weight_400 pagination__number">4</i></a>
+                    <i class="text_weight_400 pagination__number">4</i>
+                </a>
                 <a href="" class="pagination__page rounded-circle link_decoration_none pointer-events_none">
                     <i class="text_weight_400 pagination__number pagination__dots">...</i>
                 </a>
@@ -925,7 +926,7 @@
                     <i class="text_weight_400 pagination__number">10</i>
                 </a>
             </div>
-            <i class="fas fa-chevron-right paginations__arrows d-flex justify-content-center align-items-center rounded-circle hover"></i>
+            <i class="icon-context-arrow chevron-right paginations__arrows d-flex justify-content-center align-items-center rounded-circle hover"></i>
         </div>
     </div>
     <div class="overflow-hidden">
@@ -963,8 +964,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>  
-</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>  
 <script src="./js/index.js"></script>
 </body>
 </html>

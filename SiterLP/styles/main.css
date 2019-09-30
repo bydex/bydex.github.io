@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?3mbhvr');
@@ -91,7 +90,9 @@
           transform: rotate(180deg);
   font-weight: 800;
 }
-
+.chevron-left {
+  transform: rotate(270deg);
+}
 
 
 /* GENERAL */
@@ -100,7 +101,6 @@ body, html {
   font-style: normal;
   font-weight: 400;
   min-width: 320px;
-  font-display: auto;
 }
 main {
   overflow-x: hidden;
@@ -785,6 +785,8 @@ main {
   border: 1px solid rgba(212, 212, 212, 0.45);
 }
 
+
+
 .pesontedan:hover label::before {
   content: '';
   position: absolute;
@@ -807,8 +809,11 @@ main {
   transition: .3s;
   padding-right: 55px;
   line-height: 18px !important;
+  font-size: 22px;
 }
-
+.pesontedan__title.text {
+  font-size: 17px;
+}
 .pesontedan input {
   position: absolute;
   opacity: 0;
@@ -1077,15 +1082,15 @@ main {
   color: #212121;
 }
 
-#user::after {
+.user::after {
   content: "";
 }
 
-#tel::after {
+.tel::after {
   content: "";
 }
 
-#email::after {
+.email::after {
   content: "";
 }
 
@@ -1367,7 +1372,7 @@ main {
 .select__show {
   display: block; 
 }
-.select_block #select__list {
+.select_block .select__list {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -1394,7 +1399,7 @@ main {
 .select__rounded {
   border-radius: 20px;
 }
-#select__list {
+.select__list {
   background-color: #212121;
   opacity: 0.9;
   top: calc(100% + 4px);
@@ -1635,7 +1640,8 @@ table {
   margin-bottom: 15px !important;
 }
 
-.table td {
+.table td,
+.table th {
   padding-top: 23px;
   padding-bottom: 23px;
   padding-left: 19px;
@@ -1646,7 +1652,7 @@ table {
 .table__col:last-child {
   width: 30%;
 }
-.thead td {
+.thead th {
   padding-left: 22px;
 }
 
@@ -1672,7 +1678,7 @@ table {
   background-color: #dd1781;
 }
 
-.thead td {
+.thead th {
   border-width: 0 !important;
 }
 
@@ -1713,14 +1719,17 @@ table {
 }
 
 .paginations__arrows {
-  font-size: 13px;
+  font-size: 15px;
   width: 35px;
   height: 35px;
   background-color: #3b91e6;
   opacity: 0.25;
   cursor: pointer;
   color: #fff;
+  font-weight: 800;
 }
+
+
 
 .paginations__arrows:hover {
   opacity: 1;
@@ -2016,7 +2025,8 @@ a.pagination__page:not(:last-child) {
     max-width: 245px;
   }
 
-  .table td {
+  .table td,
+  .table th {
     padding-top: 9px;
     padding-bottom: 9px;
   }
