@@ -1,3 +1,98 @@
+/*ANIMATIONS*/
+
+/*ANIMATIONS-END*/
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated.delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animated.delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animated.delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+
+
 /*SPECIFICATIONS*/
 * {
     box-sizing: border-box;
@@ -949,11 +1044,34 @@ h2 .stars {
     right: -115px;
 }
 
+
+
 .shop .travel-slider__bg {
     background-position: right !important;
 }
 .shop .main-slider__arrows {
     top: 40px;
+}
+.shop .stars {
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.shop__price {
+    margin-bottom: 65px;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    sup {
+        margin-left: 5px;
+    }
+}
+.shop h2 {
+    margin-bottom: 0;
+}
+.section .shop__btn {
+    justify-content: flex-start;
 }
 
 .travel-slider__item .shop-section {
@@ -965,6 +1083,8 @@ h2 .stars {
 }
 
 .surfboard {
+    $desc-width: 400px;
+
     display: flex;
 
     &__img-wrapper {
@@ -985,12 +1105,76 @@ h2 .stars {
         border-radius: 50%;
 
         cursor: pointer;
+
+        &.active {
+            .surfboard__description {
+                width: $desc-width;
+            }
+        }
     }
     &__dot--1 { top: 28%; left: 73%; }
     &__dot--2 { top: 42%; left: -3%; }
     &__dot--3 { top: 88%; left: 23%; }
 
+
     &__dot-value { margin: 0; }
+
+    &__description {
+        position: absolute;
+        overflow: hidden;
+        width: 0;
+        font-weight: 800;
+        font-size: 24px;
+        text-transform: uppercase;
+        transition: .5s;
+        cursor: auto;
+
+        &--right {
+            right: calc(100% + 5px);
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+
+            .surfboard__description-inner {
+                padding-right: 100px;
+
+                &:after {
+                    right: 0;
+                }
+            }
+        }
+        &--left {
+            left: calc(100% + 5px);
+            display: flex;
+            justify-content: flex-start;
+            text-align: left;
+
+            .surfboard__description-inner {
+                padding-left: 100px;
+
+                &:after {
+                    left: 0;
+                }
+            }
+        }
+
+        &-inner {
+            display: block;
+            min-width: $desc-width;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                width: 80px;
+                height: 1px;
+                background: #FFFFFF;
+                opacity: 0.5;
+            }
+        }
+    }
 }
 
 .extras {

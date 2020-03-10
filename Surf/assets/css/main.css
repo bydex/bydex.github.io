@@ -341,6 +341,96 @@ template {
   display: none;
 }
 
+/*ANIMATIONS*/
+/*ANIMATIONS-END*/
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated.delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animated.delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animated.delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
 /*SPECIFICATIONS*/
 * {
   -webkit-box-sizing: border-box;
@@ -1712,6 +1802,34 @@ h2 .stars {
   top: 40px;
 }
 
+.shop .stars {
+  display: block;
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.shop__price {
+  margin-bottom: 65px;
+  font-weight: 800;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.shop__price sup {
+  margin-left: 5px;
+}
+
+.shop h2 {
+  margin-bottom: 0;
+}
+
+.section .shop__btn {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .travel-slider__item .shop-section {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1764,6 +1882,10 @@ h2 .stars {
   cursor: pointer;
 }
 
+.surfboard__dot.active .surfboard__description {
+  width: 400px;
+}
+
 .surfboard__dot--1 {
   top: 28%;
   left: 73%;
@@ -1781,6 +1903,82 @@ h2 .stars {
 
 .surfboard__dot-value {
   margin: 0;
+}
+
+.surfboard__description {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  cursor: auto;
+}
+
+.surfboard__description--right {
+  right: -webkit-calc(100% + 5px);
+  right: calc(100% + 5px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+}
+
+.surfboard__description--right .surfboard__description-inner {
+  padding-right: 100px;
+}
+
+.surfboard__description--right .surfboard__description-inner:after {
+  right: 0;
+}
+
+.surfboard__description--left {
+  left: -webkit-calc(100% + 5px);
+  left: calc(100% + 5px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+}
+
+.surfboard__description--left .surfboard__description-inner {
+  padding-left: 100px;
+}
+
+.surfboard__description--left .surfboard__description-inner:after {
+  left: 0;
+}
+
+.surfboard__description-inner {
+  display: block;
+  min-width: 400px;
+}
+
+.surfboard__description-inner:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 1px;
+  background: #FFFFFF;
+  opacity: 0.5;
 }
 
 .extras {

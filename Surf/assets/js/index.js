@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.nav-links__item, .scroll-arrow-js').on('click', 'a', function(event) {
         event.preventDefault()
         var id = $(this).attr('href'),
-            top = $(id).offset().top
+        top = $(id).offset().top
         $('body,html').animate({ scrollTop: top }, 1500)
     })
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
         prevArrow:
             '<span class="icon-arrow-left main-slider_prev main-slider__arrows"></span>',
         nextArrow:
-            '<span class="icon-arrow-right main-slider_next main-slider__arrows"></span>',
+        '<span class="icon-arrow-right main-slider_next main-slider__arrows"></span>',
         // autoplay: true,
         // autoplaySpeed: 3000,
         infinite: true,
@@ -54,10 +54,10 @@ $(document).ready(function() {
     })
     $('.travel-slider').slick({
         prevArrow:
-            '<span class="icon-arrow-left main-slider_prev main-slider__arrows"></span>',
+        '<span class="icon-arrow-left main-slider_prev main-slider__arrows"></span>',
         nextArrow:
             '<span class="icon-arrow-right main-slider_next main-slider__arrows"></span>',
-        draggable: false,
+            draggable: false,
         autoplay: true,
         autoplaySpeed: 10000,
         fade: true,
@@ -119,7 +119,7 @@ $(document).ready(function() {
     let latitude = document.querySelector('.coordinates__latitude'),
         longitude = document.querySelector('.coordinates__longitude')
 
-    function setCoordinates() {
+        function setCoordinates() {
         let coordinate = $('.surf-dot.slick-current').position()
         number_to(
             latitude,
@@ -190,13 +190,13 @@ $(document).ready(function() {
             parseNumber(miles.innerText),
             parseNumber(sliderInfo.miles.toString()),
             2000
-        )
+            )
         number_to(
             hours,
             parseNumber(hours.innerText),
             parseNumber(sliderInfo.hours.toString()),
             2000
-        )
+            )
         number_to(
             minutes,
             parseNumber(minutes.innerText),
@@ -217,11 +217,11 @@ $(document).ready(function() {
 
     function setSleepOptions() {
         let slide = $('.sleep .travel-slider .slick-current'),
-            city = document.querySelector('.sleep .city'),
+        city = document.querySelector('.sleep .city'),
             sliderInfo = {
                 city: slide.data('city'),
             }
-        writeTextByJS(city, [sliderInfo.city])
+            writeTextByJS(city, [sliderInfo.city])
         scoreSleepOptions()
     }
     function scoreSleepOptions() {
@@ -229,17 +229,17 @@ $(document).ready(function() {
             price = document.querySelector('.sleep .price'),
             nights = $('.count-nights'),
             guests = $('.count-guests')
-        ;(sliderInfo = {
+            ;(sliderInfo = {
             nightsIncrease: slide.data('nights'),
         }),
             (total =
                 +nights.text() * +guests.text() * sliderInfo.nightsIncrease)
-        number_to(
+                number_to(
             price,
             parseNumber(price.innerText),
             parseNumber(total.toString()),
             2000
-        )
+            )
     }
     $('.count-button').click(function() {
         let countEl = $(this)
@@ -247,12 +247,12 @@ $(document).ready(function() {
                 .find('.count'),
             count = +countEl.html()
 
-        $(this).hasClass('plus-minus__minus')
+            $(this).hasClass('plus-minus__minus')
             ? countEl.html(() => {
-                  if (count > 0) {
+                if (count > 0) {
                       return --count
                   }
-              })
+                })
             : countEl.html(++count)
         scoreSleepOptions()
     })
@@ -260,5 +260,22 @@ $(document).ready(function() {
     setSleepOptions()
     $('.sleep .travel-slider').on('afterChange', function() {
         setSleepOptions()
+    })
+
+
+})
+Object.prototype.replaceIf = function(firstClass, secondClass) {
+    if (this.classList.contains(firstClass)) {
+        this.classList.replace(firstClass, secondClass)
+    } else {
+        this.classList.replace(secondClass, firstClass)
+    }
+}
+document.querySelectorAll('.surfboard__dot').forEach(function(el) {
+    el.addEventListener('click', function() {
+        this.classList.toggle('active');
+        this.querySelector(
+            '.surfboard__dot-value'
+        ).replaceIf('plus-minus__plus', 'plus-minus__minus')
     })
 })
