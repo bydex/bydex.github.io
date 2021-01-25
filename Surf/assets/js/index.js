@@ -264,18 +264,12 @@ $(document).ready(function() {
 
 
 })
-Object.prototype.replaceIf = function(firstClass, secondClass) {
-    if (this.classList.contains(firstClass)) {
-        this.classList.replace(firstClass, secondClass)
-    } else {
-        this.classList.replace(secondClass, firstClass)
-    }
-}
+
 document.querySelectorAll('.surfboard__dot').forEach(function(el) {
     el.addEventListener('click', function() {
         this.classList.toggle('active');
-        this.querySelector(
+        $(this).find(
             '.surfboard__dot-value'
-        ).replaceIf('plus-minus__plus', 'plus-minus__minus')
+        ).toggleClass(['plus-minus__plus', 'plus-minus__minus'])
     })
 })
